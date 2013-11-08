@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ExecI-PA</string>
+    <string name="action_settings">Settings</string>
+	<string name="botao1">Hello</string>
+	<string name="botao2">GoodBye</string>
+	
+</resources>

@@ -1,0 +1,251 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.jst.j2ee.webservice.ui,1.1.500.v201105122000,"org.eclipse.jst.j2ee.webservice.ui",1370652187658
+started,bundle,org.eclipse.jst.ws.jaxws.utils,1.0.100.v201201031437,"org.eclipse.jst.ws.jaxws.utils",1370652187658
+started,bundle,org.eclipse.mylyn.bugzilla.core,3.6.5.v20120123-0100,"org.eclipse.mylyn.bugzilla.core",1370652187658
+started,bundle,org.eclipse.mylyn.bugzilla.ui,3.6.0.v20110608-1400,"org.eclipse.mylyn.bugzilla.ui",1370652187658
+started,bundle,org.eclipse.mylyn.commons.identity,0.8.0.v20110608-1400,"org.eclipse.mylyn.commons.identity",1370652187659
+started,bundle,org.eclipse.mylyn.commons.net,3.6.0.v20110608-1400,"org.eclipse.mylyn.commons.net",1370652187659
+started,bundle,org.eclipse.mylyn.commons.ui,3.6.1.v20110720-0100,"org.eclipse.mylyn.commons.ui",1370652187659
+started,bundle,org.eclipse.mylyn.context.core,3.6.1.v20110720-0100,"org.eclipse.mylyn.context.core",1370652187659
+started,bundle,org.eclipse.mylyn.context.ui,3.6.1.v20120112-0100,"org.eclipse.mylyn.context.ui",1370652187660
+started,bundle,org.eclipse.mylyn.monitor.ui,3.6.0.v20110608-1400,"org.eclipse.mylyn.monitor.ui",1370652187660
+started,bundle,org.eclipse.mylyn.tasks.ui,3.6.5.v20120215-0100,"org.eclipse.mylyn.tasks.ui",1370652187660
+started,bundle,org.eclipse.mylyn.team.ui,3.6.1.v20110825-0100,"org.eclipse.mylyn.team.ui",1370652187660
+started,bundle,org.eclipse.search,3.7.0.v20110928-1504,"org.eclipse.search",1370652187660
+started,bundle,org.eclipse.team.core,3.6.0.I20110525-0800,"org.eclipse.team.core",1370652187660
+started,bundle,org.eclipse.team.cvs.core,3.3.400.I20110510-0800,"org.eclipse.team.cvs.core",1370652187660
+started,bundle,org.eclipse.team.cvs.ui,3.3.401.v20120126-1227,"org.eclipse.team.cvs.ui",1370652187661
+started,bundle,org.eclipse.team.ui,3.6.101.R37x_v20111109-0800,"org.eclipse.team.ui",1370652187661
+started,bundle,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui",1370652187661
+started,bundle,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console",1370652187661
+started,bundle,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.editors",1370652187661
+started,bundle,org.eclipse.ui.forms,3.5.101.v20111011-1919,"org.eclipse.ui.forms",1370652187670
+started,bundle,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.ide",1370652187670
+started,bundle,org.eclipse.ui.navigator,3.5.101.v20120106-1355,"org.eclipse.ui.navigator",1370652187670
+started,bundle,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.resources",1370652187670
+started,bundle,org.eclipse.ui.net,1.2.100.v20111208-1155,"org.eclipse.ui.net",1370652187670
+started,bundle,org.eclipse.ui.views,3.6.0.v20110928-1505,"org.eclipse.ui.views",1370652187670
+started,bundle,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"org.eclipse.ui.workbench",1370652187670
+started,bundle,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.workbench.texteditor",1370652187670
+started,bundle,org.eclipse.update.configurator,3.3.100.v20100512,"org.eclipse.update.configurator",1370652187671
+started,bundle,org.eclipse.update.core,3.2.500.v20110330,"org.eclipse.update.core",1370652187672
+started,bundle,org.eclipse.update.scheduler,3.2.300.v20100512,"org.eclipse.update.scheduler",1370652187672
+started,bundle,org.eclipse.wst.common.emf,1.2.100.v201101101900,"org.eclipse.wst.common.emf",1370652187672
+started,bundle,org.eclipse.wst.common.emfworkbench.integration,1.2.101.v201107140600,"org.eclipse.wst.common.emfworkbench.integration",1370652187672
+started,bundle,org.eclipse.wst.common.frameworks,1.2.102.v201201190400,"org.eclipse.wst.common.frameworks",1370652187672
+started,bundle,org.eclipse.wst.common.project.facet.core,1.4.201.v201201101553,"org.eclipse.wst.common.project.facet.core",1370652187672
+started,bundle,org.eclipse.wst.web,1.1.501.v201201190400,"org.eclipse.wst.web",1370652187672
+os,sysinfo,,,"macosx",1370652187677
+arch,sysinfo,,,"x86_64",1370652187677
+ws,sysinfo,,,"cocoa",1370652187677
+locale,sysinfo,,,"pt_BR",1370652187677
+processors,sysinfo,,,"4",1370652187677
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1370652187677
+java.runtime.version,sysinfo,,,"1.6.0_45-b06-451-11M4406",1370652187677
+java.specification.name,sysinfo,,,"Java Platform API Specification",1370652187677
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1370652187677
+java.specification.version,sysinfo,,,"1.6",1370652187677
+java.vendor,sysinfo,,,"Apple Inc.",1370652187677
+java.version,sysinfo,,,"1.6.0_45",1370652187677
+java.vm.info,sysinfo,,,"mixed mode",1370652187677
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1370652187677
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1370652187677
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1370652187677
+java.vm.specification.version,sysinfo,,,"1.0",1370652187677
+java.vm.vendor,sysinfo,,,"Apple Inc.",1370652187677
+java.vm.version,sysinfo,,,"20.45-b01-451",1370652187677
+started,bundle,org.eclipse.ui.browser,3.3.101.v20111019-1723,"org.eclipse.ui.browser",1370652209685
+started,bundle,org.eclipse.wst.server.core,1.1.304.v20120208_1420,"org.eclipse.wst.server.core",1370652210079
+started,bundle,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui",1370652210120
+started,bundle,org.eclipse.rse.services,3.2.101.R33x_v201109141647,"org.eclipse.rse.services",1370652225636
+started,bundle,org.eclipse.rse.core,3.2.2.R33x_v201110030150,"org.eclipse.rse.core",1370652225665
+started,bundle,org.eclipse.rse.ui,3.2.1.R33x_v201109141647,"org.eclipse.rse.ui",1370652225844
+started,bundle,org.eclipse.rse.files.ui,3.2.1.R33x_v201109141647,"org.eclipse.rse.files.ui",1370652225887
+started,bundle,org.eclipse.rse.subsystems.files.core,3.2.101.R33x_v201107181530,"org.eclipse.rse.subsystems.files.core",1370652225892
+started,bundle,org.eclipse.rse.subsystems.files.local,2.1.200.v201101042155,"org.eclipse.rse.subsystems.files.local",1370652225893
+started,bundle,org.eclipse.rse.subsystems.shells.core,3.1.201.R33x_v201106281309,"org.eclipse.rse.subsystems.shells.core",1370652225965
+started,bundle,org.eclipse.rse.subsystems.shells.local,2.1.300.v201101042155,"org.eclipse.rse.subsystems.shells.local",1370652225980
+started,bundle,org.eclipse.rse.connectorservice.local,2.1.300.v201101042155,"org.eclipse.rse.connectorservice.local",1370652226062
+started,bundle,org.eclipse.rse.services.local,2.1.300.v201105311250,"org.eclipse.rse.services.local",1370652226064
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652226230
+started,bundle,org.eclipse.jst.servlet.ui,1.1.502.v201202011054,"org.eclipse.jst.servlet.ui",1370652226439
+started,bundle,org.eclipse.wst.common.core,1.2.0.v200908252030,"org.eclipse.wst.common.core",1370652226878
+started,bundle,org.eclipse.wst.common.modulecore,1.2.103.v201201190400,"org.eclipse.wst.common.modulecore",1370652226884
+started,bundle,org.eclipse.jst.common.project.facet.core,1.4.200.v201103170302,"org.eclipse.jst.common.project.facet.core",1370652227046
+started,bundle,org.eclipse.jst.ws.jaxrs.core,1.0.301.v201108240656,"org.eclipse.jst.ws.jaxrs.core",1370652227063
+started,bundle,org.eclipse.jst.j2ee.ui,1.1.503.v201201190400,"org.eclipse.jst.j2ee.ui",1370652227124
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652230977
+executed,command,org.eclipse.search,3.7.0.v20110928-1504,"org.eclipse.search.ui.openSearchDialog",1370652231003
+started,bundle,org.eclipse.epp.mpc.core,1.1.1.I20110907-0947,"org.eclipse.epp.mpc.core",1370652239175
+started,bundle,org.eclipse.equinox.p2.transport.ecf,1.0.0.v20111128-0624,"org.eclipse.equinox.p2.transport.ecf",1370652239200
+started,bundle,org.eclipse.ecf.filetransfer,5.0.0.v20110531-2218,"org.eclipse.ecf.filetransfer",1370652239231
+started,bundle,org.eclipse.ecf.identity,3.1.100.v20110531-2218,"org.eclipse.ecf.identity",1370652239281
+started,bundle,org.eclipse.ecf,3.1.300.v20110531-2218,"org.eclipse.ecf",1370652239312
+started,bundle,org.eclipse.ecf.provider.filetransfer.httpclient,4.0.0.v20110531-2218,"org.eclipse.ecf.provider.filetransfer.httpclient",1370652239354
+started,bundle,org.eclipse.ecf.provider.filetransfer,3.2.0.v20110531-2218,"org.eclipse.ecf.provider.filetransfer",1370652239358
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652239922
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652240917
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652241272
+started,bundle,org.eclipse.equinox.p2.ui,2.1.1.v20120113-1346,"org.eclipse.equinox.p2.ui",1370652241420
+started,bundle,org.eclipse.equinox.p2.ui.sdk,1.0.200.v20110815-1419,"org.eclipse.equinox.p2.ui.sdk",1370652241465
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652252280
+executed,command,org.eclipse.epp.mpc.ui,1.1.1.I20110907-0947,"org.eclipse.epp.mpc.ui.command.showMarketplaceWizard",1370652252305
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652261450
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652276281
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652279960
+started,bundle,org.eclipse.equinox.p2.extensionlocation,1.2.100.v20110815-1419,"org.eclipse.equinox.p2.extensionlocation",1370652282022
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1370652292399
+started,bundle,org.eclipse.equinox.p2.artifact.repository,1.1.101.v20110815-1419,"org.eclipse.equinox.p2.artifact.repository",1370652298466
+started,bundle,org.eclipse.equinox.p2.updatesite,1.0.300.v20110815-1419,"org.eclipse.equinox.p2.updatesite",1370652302758
+started,bundle,org.eclipse.equinox.p2.publisher,1.2.0.v20110815-1419,"org.eclipse.equinox.p2.publisher",1370652302767
+started,bundle,org.eclipse.equinox.p2.publisher.eclipse,1.0.0.v20110815-1438,"org.eclipse.equinox.p2.publisher.eclipse",1370652303907
+started,bundle,org.eclipse.equinox.p2.director,2.1.1.v20111126-0211,"org.eclipse.equinox.p2.director",1370652316145
+started,bundle,org.eclipse.equinox.p2.garbagecollector,1.0.200.v20110815-1419,"org.eclipse.equinox.p2.garbagecollector",1370652341440
+started,bundle,org.eclipse.equinox.p2.touchpoint.eclipse,2.1.1.v20110815-1419,"org.eclipse.equinox.p2.touchpoint.eclipse",1370652341526
+started,bundle,org.eclipse.equinox.frameworkadmin,2.0.0.v20110815-1438,"org.eclipse.equinox.frameworkadmin",1370652378566
+started,bundle,org.eclipse.equinox.simpleconfigurator.manipulator,2.0.0.v20110815-1438,"org.eclipse.equinox.simpleconfigurator.manipulator",1370652378584
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652402054
+executed,command,org.eclipse.equinox.p2.ui.sdk,1.0.200.v20110815-1419,"org.eclipse.equinox.p2.ui.sdk.install",1370652402082
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652402555
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652406231
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652414174
+started,bundle,org.eclipse.debug.core,3.7.1.v20111129-2031,"org.eclipse.debug.core",1370652416902
+started,bundle,org.eclipse.jdt.launching,3.6.1.v20111006_r372,"org.eclipse.jdt.launching",1370652416923
+started,bundle,org.eclipse.jdt.launching.macosx,3.2.100.v20111006_r372,"org.eclipse.jdt.launching.macosx",1370652416945
+started,bundle,org.eclipse.jdt.apt.core,3.3.500.v20110420-1015,"org.eclipse.jdt.apt.core",1370652423192
+started,bundle,org.eclipse.jdt.apt.pluggable.core,1.0.400.v20110305-1450,"org.eclipse.jdt.apt.pluggable.core",1370652423216
+started,bundle,org.eclipse.jst.jee.ui,1.0.401.v201202011107,"org.eclipse.jst.jee.ui",1370652423323
+started,bundle,org.eclipse.jst.j2ee.navigator.ui,1.1.501.v201107261503,"org.eclipse.jst.j2ee.navigator.ui",1370652423343
+started,bundle,org.eclipse.jst.j2ee.core,1.2.102.v201202090300,"org.eclipse.jst.j2ee.core",1370652423423
+started,bundle,org.eclipse.jem,2.0.501.v201111030500,"org.eclipse.jem",1370652423477
+started,bundle,org.eclipse.wst.common.frameworks.ui,1.2.100.v201105122000,"org.eclipse.wst.common.frameworks.ui",1370652423542
+started,bundle,org.eclipse.wst.xml.core,1.1.602.v201201091944,"org.eclipse.wst.xml.core",1370652423602
+started,bundle,org.eclipse.wst.validation,1.2.303.v201202090300,"org.eclipse.wst.validation",1370652423705
+started,bundle,org.eclipse.jst.j2ee,1.1.503.v201202090300,"org.eclipse.jst.j2ee",1370652423809
+started,bundle,org.eclipse.pde.launching,3.6.0.v20110506,"org.eclipse.pde.launching",1370652428122
+started,bundle,org.eclipse.ui.views.log,1.0.200.v20110404,"org.eclipse.ui.views.log",1370652428138
+started,bundle,org.eclipse.pde.ui,3.6.100.v20120103_r372,"org.eclipse.pde.ui",1370652428151
+opened,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1370652428300
+opened,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1370652428353
+opened,view,org.eclipse.mylyn.tasks.ui,3.6.5.v20120215-0100,"org.eclipse.mylyn.tasks.ui.views.tasks",1370652429056
+activated,perspective,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.JavaPerspective",1370652429108
+activated,view,org.eclipse.ui.views,3.6.0.v20110928-1505,"org.eclipse.ui.views.ContentOutline",1370652429112
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652430070
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652442352
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652468152
+started,bundle,org.eclipse.equinox.frameworkadmin.equinox,1.0.300.v20110815-1438,"org.eclipse.equinox.frameworkadmin.equinox",1370652468592
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1370652470527
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652471724
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652479009
+installed,bundle,com.android.ide.eclipse.adt,22.0.1.v201305230001--685705,"com.android.ide.eclipse.adt",1370652479052
+installed,bundle,com.android.ide.eclipse.adt.package,22.0.1.v201305230001--685705,"com.android.ide.eclipse.adt.package",1370652479058
+installed,bundle,com.android.ide.eclipse.base,22.0.1.v201305230001--685705,"com.android.ide.eclipse.base",1370652479062
+installed,bundle,com.android.ide.eclipse.ddms,22.0.1.v201305230001--685705,"com.android.ide.eclipse.ddms",1370652479066
+installed,bundle,com.android.ide.eclipse.gldebugger,22.0.1.v201305230001--685705,"com.android.ide.eclipse.gldebugger",1370652479074
+resolved,bundle,com.android.ide.eclipse.base,22.0.1.v201305230001--685705,"com.android.ide.eclipse.base",1370652479078
+installed,bundle,com.android.ide.eclipse.hierarchyviewer,22.0.1.v201305230001--685705,"com.android.ide.eclipse.hierarchyviewer",1370652479087
+installed,bundle,com.android.ide.eclipse.traceview,22.0.1.v201305230001--685705,"com.android.ide.eclipse.traceview",1370652479100
+resolved,bundle,com.android.ide.eclipse.ddms,22.0.1.v201305230001--685705,"com.android.ide.eclipse.ddms",1370652479101
+resolved,bundle,com.android.ide.eclipse.gldebugger,22.0.1.v201305230001--685705,"com.android.ide.eclipse.gldebugger",1370652479103
+resolved,bundle,com.android.ide.eclipse.adt,22.0.1.v201305230001--685705,"com.android.ide.eclipse.adt",1370652479113
+resolved,bundle,com.android.ide.eclipse.adt.package,22.0.1.v201305230001--685705,"com.android.ide.eclipse.adt.package",1370652479115
+installed,bundle,overlay.com.android.ide.eclipse.adt.overlay,22.0.1.v201305230001--685705,"overlay.com.android.ide.eclipse.adt.overlay",1370652479121
+resolved,bundle,com.android.ide.eclipse.traceview,22.0.1.v201305230001--685705,"com.android.ide.eclipse.traceview",1370652479123
+resolved,bundle,com.android.ide.eclipse.hierarchyviewer,22.0.1.v201305230001--685705,"com.android.ide.eclipse.hierarchyviewer",1370652479125
+resolved,bundle,overlay.com.android.ide.eclipse.adt.overlay,22.0.1.v201305230001--685705,"overlay.com.android.ide.eclipse.adt.overlay",1370652479133
+stopped,bundle,overlay.com.android.ide.eclipse.adt.overlay,22.0.1.v201305230001--685705,"overlay.com.android.ide.eclipse.adt.overlay",1370652479161
+stopped,bundle,com.android.ide.eclipse.adt,22.0.1.v201305230001--685705,"com.android.ide.eclipse.adt",1370652479163
+stopped,bundle,com.android.ide.eclipse.gldebugger,22.0.1.v201305230001--685705,"com.android.ide.eclipse.gldebugger",1370652479165
+stopped,bundle,com.android.ide.eclipse.hierarchyviewer,22.0.1.v201305230001--685705,"com.android.ide.eclipse.hierarchyviewer",1370652479169
+stopped,bundle,com.android.ide.eclipse.traceview,22.0.1.v201305230001--685705,"com.android.ide.eclipse.traceview",1370652479174
+stopped,bundle,com.android.ide.eclipse.ddms,22.0.1.v201305230001--685705,"com.android.ide.eclipse.ddms",1370652479179
+stopped,bundle,com.android.ide.eclipse.base,22.0.1.v201305230001--685705,"com.android.ide.eclipse.base",1370652479183
+unresolved,bundle,com.android.ide.eclipse.adt.package,22.0.1.v201305230001--685705,"com.android.ide.eclipse.adt.package",1370652479184
+unresolved,bundle,overlay.com.android.ide.eclipse.adt.overlay,22.0.1.v201305230001--685705,"overlay.com.android.ide.eclipse.adt.overlay",1370652479184
+unresolved,bundle,com.android.ide.eclipse.adt,22.0.1.v201305230001--685705,"com.android.ide.eclipse.adt",1370652479184
+unresolved,bundle,com.android.ide.eclipse.gldebugger,22.0.1.v201305230001--685705,"com.android.ide.eclipse.gldebugger",1370652479184
+unresolved,bundle,com.android.ide.eclipse.hierarchyviewer,22.0.1.v201305230001--685705,"com.android.ide.eclipse.hierarchyviewer",1370652479184
+unresolved,bundle,com.android.ide.eclipse.traceview,22.0.1.v201305230001--685705,"com.android.ide.eclipse.traceview",1370652479184
+unresolved,bundle,com.android.ide.eclipse.ddms,22.0.1.v201305230001--685705,"com.android.ide.eclipse.ddms",1370652479184
+unresolved,bundle,com.android.ide.eclipse.base,22.0.1.v201305230001--685705,"com.android.ide.eclipse.base",1370652479184
+resolved,bundle,com.android.ide.eclipse.base,22.0.1.v201305230001--685705,"com.android.ide.eclipse.base",1370652479249
+resolved,bundle,com.android.ide.eclipse.ddms,22.0.1.v201305230001--685705,"com.android.ide.eclipse.ddms",1370652479251
+resolved,bundle,com.android.ide.eclipse.traceview,22.0.1.v201305230001--685705,"com.android.ide.eclipse.traceview",1370652479252
+resolved,bundle,com.android.ide.eclipse.hierarchyviewer,22.0.1.v201305230001--685705,"com.android.ide.eclipse.hierarchyviewer",1370652479254
+resolved,bundle,com.android.ide.eclipse.gldebugger,22.0.1.v201305230001--685705,"com.android.ide.eclipse.gldebugger",1370652479256
+resolved,bundle,com.android.ide.eclipse.adt,22.0.1.v201305230001--685705,"com.android.ide.eclipse.adt",1370652479265
+resolved,bundle,overlay.com.android.ide.eclipse.adt.overlay,22.0.1.v201305230001--685705,"overlay.com.android.ide.eclipse.adt.overlay",1370652479266
+resolved,bundle,com.android.ide.eclipse.adt.package,22.0.1.v201305230001--685705,"com.android.ide.eclipse.adt.package",1370652479268
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1370652479418
+error,log,,,"Exception in org.eclipse.ui.internal.registry.UIExtensionTracker$2.doAdd: org.eclipse.core.runtime.InvalidRegistryObjectException: Invalid registry object",1370652479468
+error,log,,,"Exception in org.eclipse.ui.internal.registry.UIExtensionTracker$2.doAdd: org.eclipse.core.runtime.InvalidRegistryObjectException: Invalid registry object",1370652479477
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479562
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479563
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479563
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479564
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479564
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479565
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479565
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479565
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479566
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479566
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479567
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479567
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479567
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479568
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479568
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479568
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479569
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479569
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479569
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479570
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479570
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652479570
+error,log,,,"Error notifying registry change listener.",1370652479573
+started,bundle,org.eclipse.compare.core,3.5.200.I20110208-0800,"org.eclipse.compare.core",1370652480511
+started,bundle,org.eclipse.compare,3.5.202.R37x_v20111109-0800,"org.eclipse.compare",1370652480516
+error,log,,,"The command (""org.eclipse.debug.ui.commands.ToggleLineBreakpoint"") is undefined",1370652480829
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481048
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481054
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481055
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481055
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481056
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481056
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481056
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481057
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481057
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481057
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481058
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481058
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481058
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481059
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481059
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481060
+started,bundle,com.android.ide.eclipse.base,22.0.1.v201305230001--685705,"com.android.ide.eclipse.base",1370652481221
+started,bundle,com.android.ide.eclipse.adt,22.0.1.v201305230001--685705,"com.android.ide.eclipse.adt",1370652481361
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481377
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481377
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481378
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481378
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481379
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481380
+error,log,,,"Error notifying registry change listener.",1370652481382
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481623
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481623
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481623
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481623
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481624
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481624
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481624
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481625
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481625
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481625
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481625
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481626
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481626
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481626
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481626
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481627
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481627
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481627
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.equinox.registry"".",1370652481628

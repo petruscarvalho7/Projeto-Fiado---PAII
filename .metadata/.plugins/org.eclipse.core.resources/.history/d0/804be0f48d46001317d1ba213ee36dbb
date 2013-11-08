@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/background_dark">
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nota1"
+        android:textColor="@android:color/white"
+    />
+
+    <EditText
+        android:id="@+id/numero1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="" 
+		android:inputType="numberDecimal"
+		android:maxLength="4"
+		android:background="@android:color/white">
+
+        <requestFocus android:layout_width="match_parent" />
+
+    </EditText>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nota2"
+       android:textColor="@android:color/white"
+    />
+    
+    <EditText
+        android:id="@+id/numero2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="" 
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:background="@android:color/white">
+
+        <requestFocus />
+    </EditText>
+
+      <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nota3"
+       android:textColor="@android:color/white"
+    />
+    
+    <EditText
+        android:id="@+id/numero3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="" 
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:background="@android:color/white">
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+    
+     <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:text="@string/btCalcular"
+        android:gravity="center"
+        android:padding="20dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:padding="5dip"
+         />
+    
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/primeiraTela"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="60dip"
+        android:layout_marginRight="30dip" />
+        
+</LinearLayout>
