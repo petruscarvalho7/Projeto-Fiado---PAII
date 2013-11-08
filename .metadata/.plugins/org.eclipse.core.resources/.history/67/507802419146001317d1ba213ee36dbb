@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="app_name">ExecI-PA</string>
-    <string name="action_settings">Settings</string>
-	<string name="btHello">Hello</string>
-	<string name="btGoodBye">GoodBye</string>
-	
-</resources>
