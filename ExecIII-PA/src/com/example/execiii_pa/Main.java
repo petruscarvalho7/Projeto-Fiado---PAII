@@ -9,6 +9,8 @@ import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.ToggleButton;
 
 public class Main extends Activity {
 
@@ -17,7 +19,11 @@ public class Main extends Activity {
 	
 	ImageButton btImRed, btImBl;
 	
+	ToggleButton tbRed, tbBlue, tbYe;
+	
 	TextView txView;
+	
+	FacadeUtil util = new Util();
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +37,9 @@ public class Main extends Activity {
         btRadioRed = (RadioButton) findViewById(R.id.btRadioRed);
         btRadioBlue = (RadioButton) findViewById(R.id.btRadioBlue);
         btRadioYe = (RadioButton) findViewById(R.id.btRadioYellow);
+        tbRed = (ToggleButton) findViewById(R.id.toggleButton1);
+        tbBlue = (ToggleButton) findViewById(R.id.toggleButton2);
+        tbYe = (ToggleButton) findViewById(R.id.toggleButton3);
         
         btImRed.setOnClickListener(new View.OnClickListener(){ 
 			public void onClick(View arg0) {
@@ -61,6 +70,7 @@ public class Main extends Activity {
 				
 				txView.setBackgroundColor(Color.RED);
 				btRadioRed.setChecked(true);
+				tbRed.setChecked(true);
 			}
         });
         
@@ -71,9 +81,66 @@ public class Main extends Activity {
 				btRadioBlue.setChecked(true);
 			}
         });
+        
+        tbRed.setOnClickListener(new View.OnClickListener(){ 
+			public void onClick(View arg0) {
+				boolean mensagem;
+				if(tbRed.isChecked()){
+					//mensagem = "Com Vermelhor";
+					mensagem = true;
+					tbRed.setText("Vermelho");
+					txView.setBackgroundColor(Color.RED);
+				}else{
+					//mensagem = "Sem Vermelhor";
+					mensagem = false;
+					txView.setBackgroundColor(Color.BLACK);
+					tbRed.setText("Vermelho");
+				}
+				Toast t = Toast.makeText(Main.this, util.msgParaToast(mensagem,tbRed), Toast.LENGTH_SHORT);
+				t.show();
+			}
+        });
+        
+        tbBlue.setOnClickListener(new View.OnClickListener(){ 
+			public void onClick(View arg0) {
+				boolean mensagem;
+				if(tbBlue.isChecked()){
+					//mensagem = "Com Vermelhor";
+					mensagem = true;
+					tbBlue.setText("Azul");
+					txView.setBackgroundColor(Color.BLUE);
+					
+				}else{
+					//mensagem = "Sem Vermelhor";
+					mensagem = false;
+					txView.setBackgroundColor(Color.BLACK);
+					tbBlue.setText("Azul");
+				}
+				Toast t = Toast.makeText(Main.this, util.msgParaToast(mensagem, tbBlue), Toast.LENGTH_SHORT);
+				t.show();
+			}
+        });
+        
+        tbYe.setOnClickListener(new View.OnClickListener(){ 
+			public void onClick(View arg0) {
+				boolean mensagem;
+				if(tbYe.isChecked()){
+					//mensagem = "Com Vermelhor";
+					mensagem = true;
+					txView.setBackgroundColor(Color.YELLOW);
+					tbYe.setText("Amarelo");
+				}else{
+					//mensagem = "Sem Vermelhor";
+					mensagem = false;
+					txView.setBackgroundColor(Color.BLACK);
+					tbYe.setText("Amarelo");
+				}
+				Toast t = Toast.makeText(Main.this, util.msgParaToast(mensagem, tbYe), Toast.LENGTH_SHORT);
+				t.show();
+			}
+        });
     }
-
-
+    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

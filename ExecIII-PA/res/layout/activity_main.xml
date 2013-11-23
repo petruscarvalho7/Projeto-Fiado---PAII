@@ -63,4 +63,38 @@
              android:text="@string/btRadioYellow" />
      </RadioGroup>
 
+     <LinearLayout
+         android:id="@+id/linearLayout"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/rgColors"
+         android:layout_centerVertical="true"
+         android:orientation="horizontal" >
+
+         <ToggleButton
+             android:id="@+id/toggleButton1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textOn="@string/btToggleOn"
+             android:textOff="@string/btToggleOff" 
+             />
+
+         <ToggleButton
+             android:id="@+id/toggleButton2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textOn="@string/btToggleOn"
+             android:textOff="@string/btToggleOff"
+              />
+
+         <ToggleButton
+             android:id="@+id/toggleButton3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+			 android:textOn="@string/btToggleOn"
+             android:textOff="@string/btToggleOff"
+             />
+
+     </LinearLayout>
+
 </RelativeLayout>

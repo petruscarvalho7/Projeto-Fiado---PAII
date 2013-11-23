@@ -10,5 +10,7 @@
     <string name="btRadioRed"> Red </string>
     <string name="btRadioBlue"> Blue </string>
     <string name="btRadioYellow"> Yellow </string>
+    <string name="btToggleOn"> On </string>
+    <string name="btToggleOff"> Off </string>
 
 </resources>
