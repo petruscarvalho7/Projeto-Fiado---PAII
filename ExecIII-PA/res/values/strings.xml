@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ExecIII-PA</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world"></string>
+    <string name="btImage1"> </string>
+    <string name="btImage2"> </string>
+    <string name="txView"> </string>
+    <string name="btRadioRed"> Red </string>
+    <string name="btRadioBlue"> Blue </string>
+    <string name="btRadioYellow"> Yellow </string>
+
+</resources>
