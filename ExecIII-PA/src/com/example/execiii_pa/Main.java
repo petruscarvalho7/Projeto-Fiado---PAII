@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -23,6 +24,8 @@ public class Main extends Activity {
 	
 	TextView txView;
 	
+	Button btAlterar;
+	
 	FacadeUtil util = new Util();
 	
     @Override
@@ -37,9 +40,10 @@ public class Main extends Activity {
         btRadioRed = (RadioButton) findViewById(R.id.btRadioRed);
         btRadioBlue = (RadioButton) findViewById(R.id.btRadioBlue);
         btRadioYe = (RadioButton) findViewById(R.id.btRadioYellow);
-        tbRed = (ToggleButton) findViewById(R.id.toggleButton1);
-        tbBlue = (ToggleButton) findViewById(R.id.toggleButton2);
-        tbYe = (ToggleButton) findViewById(R.id.toggleButton3);
+        tbRed = (ToggleButton) findViewById(R.id.tb1);
+        tbBlue = (ToggleButton) findViewById(R.id.tb2);
+        tbYe = (ToggleButton) findViewById(R.id.tb3);
+        btAlterar = (Button) findViewById(R.id.button1);
         
         btImRed.setOnClickListener(new View.OnClickListener(){ 
 			public void onClick(View arg0) {
@@ -57,30 +61,6 @@ public class Main extends Activity {
 			}
         });
         
-        btRadioYe.setOnClickListener(new View.OnClickListener(){ 
-			public void onClick(View arg0) {
-				
-				txView.setBackgroundColor(Color.YELLOW);
-				btRadioYe.setChecked(true);
-			}
-        });
-        
-        btRadioRed.setOnClickListener(new View.OnClickListener(){ 
-			public void onClick(View arg0) {
-				
-				txView.setBackgroundColor(Color.RED);
-				btRadioRed.setChecked(true);
-				tbRed.setChecked(true);
-			}
-        });
-        
-        btRadioBlue.setOnClickListener(new View.OnClickListener(){ 
-			public void onClick(View arg0) {
-				
-				txView.setBackgroundColor(Color.BLUE);
-				btRadioBlue.setChecked(true);
-			}
-        });
         
         tbRed.setOnClickListener(new View.OnClickListener(){ 
 			public void onClick(View arg0) {
@@ -138,6 +118,24 @@ public class Main extends Activity {
 				Toast t = Toast.makeText(Main.this, util.msgParaToast(mensagem, tbYe), Toast.LENGTH_SHORT);
 				t.show();
 			}
+        });
+        
+        btAlterar.setOnClickListener(new View.OnClickListener(){ 
+			public void onClick(View arg0) {
+				
+				int button = rg.getCheckedRadioButtonId();
+				
+				RadioButton rb = (RadioButton) findViewById(button);
+				
+				if(rb.getText().toString().contains("Red")){
+					txView.setBackgroundColor(Color.RED);
+				}else if(rb.getText().toString().contains("Blue")){
+					txView.setBackgroundColor(Color.BLUE);
+				}else if(rb.getText().toString().contains("Yellow")){
+					txView.setBackgroundColor(Color.YELLOW);
+				}
+			}
+			
         });
     }
     

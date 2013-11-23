@@ -36,17 +36,59 @@
          android:layout_alignLeft="@+id/imageView1"
          android:layout_alignParentBottom="true"
          android:layout_alignRight="@+id/imageView2"
-         android:layout_below="@+id/rgColors"
-         android:layout_marginTop="64dp"
+         android:layout_below="@+id/button1"
          android:text="@string/txView" />
+
+     <LinearLayout
+         android:id="@+id/linearLayout"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/rgColors"
+         android:layout_centerVertical="true"
+         android:orientation="horizontal" >
+
+         <ToggleButton
+             android:id="@+id/tb1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textOn="@string/btToggleOn"
+             android:textOff="@string/btToggleOff" 
+             />
+
+         <ToggleButton
+             android:id="@+id/tb2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textOn="@string/btToggleOn"
+             android:textOff="@string/btToggleOff"
+              />
+
+         <ToggleButton
+             android:id="@+id/tb3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+			 android:textOn="@string/btToggleOn"
+             android:textOff="@string/btToggleOff"
+             />
+
+     </LinearLayout>
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView1"
+         android:layout_below="@+id/linearLayout"
+         android:layout_marginLeft="40dp"
+         android:text="@string/btAlterar" />
 
      <RadioGroup
          android:id="@+id/rgColors"
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
-         android:layout_below="@+id/imageView1"
+         android:layout_above="@+id/linearLayout"
          android:layout_centerHorizontal="true"
-         android:layout_marginTop="62dp"
+         android:layout_marginBottom="21dp"
          android:orientation="horizontal" >
 
          <RadioButton
@@ -62,39 +104,5 @@
              android:id="@+id/btRadioYellow"
              android:text="@string/btRadioYellow" />
      </RadioGroup>
-
-     <LinearLayout
-         android:id="@+id/linearLayout"
-         android:layout_width="fill_parent"
-         android:layout_height="wrap_content"
-         android:layout_alignLeft="@+id/rgColors"
-         android:layout_centerVertical="true"
-         android:orientation="horizontal" >
-
-         <ToggleButton
-             android:id="@+id/toggleButton1"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:textOn="@string/btToggleOn"
-             android:textOff="@string/btToggleOff" 
-             />
-
-         <ToggleButton
-             android:id="@+id/toggleButton2"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:textOn="@string/btToggleOn"
-             android:textOff="@string/btToggleOff"
-              />
-
-         <ToggleButton
-             android:id="@+id/toggleButton3"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-			 android:textOn="@string/btToggleOn"
-             android:textOff="@string/btToggleOff"
-             />
-
-     </LinearLayout>
 
 </RelativeLayout>

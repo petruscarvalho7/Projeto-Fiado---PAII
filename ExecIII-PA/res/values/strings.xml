@@ -12,5 +12,6 @@
     <string name="btRadioYellow"> Yellow </string>
     <string name="btToggleOn"> On </string>
     <string name="btToggleOff"> Off </string>
+    <string name="btAlterar"> Altere a cor! </string>
 
 </resources>
