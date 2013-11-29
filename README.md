@@ -1,11 +1,15 @@
 
-
                                           Projeto Fiado - PAII
 
 
-Equipe: Petrus Carvalho
-Diego Lorran
-Robson Soares
+Equipe: 
+
+Nome: Petrus Carvalho
+
+Nome: Diego Lorran
+
+Nome: Robson Soares 
+Email: robson.soares@dce.ufpb.br
 
 Objetivo:
 
