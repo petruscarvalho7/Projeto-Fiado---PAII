@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">GerenciadorDeFiado</string>
+    <string name="app_name">Gerenciador De Fiado</string>
     <string name="action_settings">Settings</string>
     <string name="logo">Logo Marca</string>
     <string name="cadastreSe">Cadastre-se</string>

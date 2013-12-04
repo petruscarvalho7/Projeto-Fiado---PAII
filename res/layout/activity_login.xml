@@ -7,7 +7,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity" >
+    tools:context=".LoginActivity"
+    android:background="@drawable/background"
+    
+     >
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -43,14 +46,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/nomeUsuario" />
+            android:text="@string/nomeUsuario"
+            android:textColor="@android:color/white"
+            
+             />
 
         <EditText
             android:id="@+id/ETxtNomeUsuario"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" >
+            android:inputType="text"
+            android:background="@android:color/white"
+            
+            
+             >
 
             <requestFocus />
         </EditText>
@@ -59,14 +69,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/senha" />
+            android:text="@string/senha"
+            android:textColor="@android:color/white"
+             />
 
         <EditText
             android:id="@+id/ETxtSenha"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" >
+            android:inputType="textPassword"
+            android:background="@android:color/white"
+            
+             >
 
             <requestFocus />
         </EditText>
