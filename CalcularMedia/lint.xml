@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<lint>
-    <issue id="DefaultLocale">
-        <ignore path="src/com/example/soma/Main.java" />
-    </issue>
-    <issue id="SuspiciousImport">
-        <ignore path="src/br/soma/Main.java" />
-    </issue>
-</lint>
