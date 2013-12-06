@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -30,25 +31,46 @@
             android:textSize="17sp" />
     </LinearLayout>
 
-    
-
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" 
-        android:layout_marginTop="20dp"
+        android:orientation="vertical" 
+        android:layout_marginTop="10dp"
         >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/lbDDD" />
+            android:layout_gravity="left"
+            android:text="@string/lbEndereco" />
+
+        <EditText
+            android:id="@+id/ETxtEndereco"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" 
+            android:background="@android:drawable/editbox_background">
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbNumero" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:text="@string/lbTelefone" />
+            android:text="@string/lbCidade" />
     </LinearLayout>
 
     <LinearLayout
@@ -57,22 +79,22 @@
         android:orientation="horizontal" >
 
         <EditText
-            android:id="@+id/ETxtDdd"
+            android:id="@+id/ETxtNumero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="4"
-            android:inputType="number" 
-            android:background="@android:drawable/editbox_background">
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
         </EditText>
 
         <EditText
-            android:id="@+id/ETxtTelefone"
+            android:id="@+id/ETxtCidade"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number"
+            android:inputType="text"
             android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
@@ -88,14 +110,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/lbEmail" />
+            android:text="@string/lbBairro" />
 
         <EditText
-            android:id="@+id/ETxtEmail"
+            android:id="@+id/ETxtBairro"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
@@ -105,35 +127,49 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/lbReferencia" />
+            android:text="@string/lbPais" />
 
         <EditText
-            android:id="@+id/ETxtReferecia"
+            android:id="@+id/ETxtPais"
             android:layout_width="fill_parent"
-            android:layout_height="150dp"
+            android:layout_height="wrap_content"
             android:ems="10"
-            android:maxLines="4"
-            android:inputType="textMultiLine"
+            android:inputType="text"
             android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
         </EditText>
         
-        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/lbCep" />
+
+        <EditText
+            android:id="@+id/ETxtCep"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@android:drawable/editbox_background" >
+
+            <requestFocus />
+        </EditText>
         
     </LinearLayout>
 
     <Button
         android:id="@+id/BtProximo"
-        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
         android:textSize="12sp"
-        android:text="@string/btSalvar"
-        
-        
-         />
+        android:text="@string/btProximo" 
+        android:layout_marginTop="10dp"
+        />
+
+    
 
 </LinearLayout>

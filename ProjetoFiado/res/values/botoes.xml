@@ -42,5 +42,6 @@
     <string name="btAdd">Adicionar</string>
     <string name="btDelete">Remover</string>
     <string name="btFinalizar">Finalizar</string>
+    <string name="lbQtd">Quantidade:</string>
 	
 </resources>

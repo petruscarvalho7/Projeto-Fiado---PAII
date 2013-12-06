@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity" >
+    android:background="#8B8B83" >
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -48,7 +48,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" >
+            android:inputType="text"
+            android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
         </EditText>
@@ -72,7 +73,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" >
+            android:inputType="text"
+            android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
         </EditText>
@@ -91,7 +93,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" >
+            android:inputType="text"
+            android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
         </EditText>
@@ -115,7 +118,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="2"
-            android:inputType="number" >
+            android:inputType="number" 
+            android:background="@android:drawable/editbox_background">
 
             <requestFocus />
         </EditText>
@@ -125,7 +129,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="2"
-            android:inputType="number" >
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
         </EditText>
@@ -135,7 +140,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="4"
-            android:inputType="number" >
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
         </EditText>

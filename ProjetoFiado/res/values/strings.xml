@@ -15,6 +15,10 @@
     <string name="logo">Logo Marca</string>
     <string name="nomeEntradaPagamento">Pagamento</string>
     <string name="formaDePagamento">Forma de Pagamento</string>
+    <string name="selecionarProduto">Selecionar Produto</string>
+    <string name="editarProduto">Editar Produto</string>
+    <string name="ckRemover">Remover</string>
+    <string name="selecionarCliente">Selecionar Cliente</string>
     
     <string-array name="arrayPagamento">
         <item>Dinheiro</item>
