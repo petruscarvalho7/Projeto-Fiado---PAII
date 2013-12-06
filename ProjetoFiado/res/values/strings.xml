@@ -19,6 +19,7 @@
     <string name="editarProduto">Editar Produto</string>
     <string name="ckRemover">Remover</string>
     <string name="selecionarCliente">Selecionar Cliente</string>
+    <string name="userLogin">Usuário:</string>
     
     <string-array name="arrayPagamento">
         <item>Dinheiro</item>

@@ -9,16 +9,18 @@ import android.widget.Button;
 
 public class ActivityMain extends Activity {
 
-	Button bt;
+	Button btLogin, btCadastre, btEsqueceuSenha;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
+		setContentView(R.layout.tela_login);
 		
-		bt = (Button) findViewById(R.id.botaoTeste);
+		btLogin = (Button) findViewById(R.id.btLogin);
+		btCadastre = (Button) findViewById(R.id.btCadastrar);
+		btEsqueceuSenha = (Button) findViewById(R.id.btEsqueceuSenha);
 		
-		bt.setOnClickListener(new View.OnClickListener(){ 
+		btLogin.setOnClickListener(new View.OnClickListener(){ 
 			public void onClick(View arg0) {
 				
 				setContentView(R.layout.menu_principal);

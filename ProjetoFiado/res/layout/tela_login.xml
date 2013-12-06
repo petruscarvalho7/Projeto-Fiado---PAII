@@ -7,8 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity"
-    
+	android:background="#8B8B83"    
      >
 
     <LinearLayout
@@ -45,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/nomeUsuario"
+            android:text="@string/userLogin"
             android:textColor="@android:color/white"
             
              />
@@ -117,7 +116,7 @@
     
 
     <Button
-        android:id="@+id/btProximo"
+        android:id="@+id/btCadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btCadastrarNovoUser" 

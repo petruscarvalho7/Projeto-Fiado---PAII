@@ -2,6 +2,8 @@
 <resources>
     
     <string name="btGerenciarVendas">Gerenciar Vendas</string>
+    <string name="lbCadastroUsuario">Cadastrar Usuário</string>
+    <string name="btCadastrar">Cadastrar</string>
     <string name="btGerenciarClientes">Gerenciar Clientes</string>
     <string name="btGerenciarProdutos">Gerenciar Produtos</string>
     <string name="btSair">Sair</string>
@@ -43,5 +45,6 @@
     <string name="btDelete">Remover</string>
     <string name="btFinalizar">Finalizar</string>
     <string name="lbQtd">Quantidade:</string>
+    <string name="lbLogin">Login:</string>
 	
 </resources>
