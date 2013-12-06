@@ -20,7 +20,9 @@
     <string name="ckRemover">Remover</string>
     <string name="selecionarCliente">Selecionar Cliente</string>
     <string name="userLogin">Usuário:</string>
-    
+    <string name="btVoltar">Voltar</string>
+    <string name="editar">Editar</string>
+    <string name="perfil">Perfil</string>
     <string-array name="arrayPagamento">
         <item>Dinheiro</item>
         <item>Cartão</item>
@@ -35,6 +37,8 @@
         <item>4</item>
         <item>5</item>
     </string-array>
+    
+    
     
     
 

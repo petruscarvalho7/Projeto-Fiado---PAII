@@ -150,16 +150,26 @@
         
     </LinearLayout>
 
-    <Button
-        android:id="@+id/BtProximo"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:textSize="12sp"
-        android:text="@string/btSalvar" 
-        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+         >
         
-        />
+        <Button
+            android:id="@+id/BtVoltar"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:text="@string/btVoltar" />
+        
+
+        <Button
+            android:id="@+id/BtFinalizar"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:text="@string/btFinalizar"  />
+    </LinearLayout>
 
 </LinearLayout>

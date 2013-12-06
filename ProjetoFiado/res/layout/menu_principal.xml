@@ -36,6 +36,13 @@
             android:layout_width="200dip"
             android:layout_height="50dip"
             android:background="@android:color/holo_green_light"
+            android:text="@string/perfil"
+             />
+        
+        <Button
+            android:layout_width="200dip"
+            android:layout_height="50dip"
+            android:background="@android:color/holo_green_light"
             android:text="@string/btGerenciarVendas"
              />
         

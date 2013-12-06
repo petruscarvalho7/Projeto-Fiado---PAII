@@ -16,7 +16,7 @@
     
 	 <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical" >
 
 	     <Spinner
@@ -39,13 +39,28 @@
 	         android:entries="@array/arrayNumeroParcelas"
 	         android:prompt="@string/numeroParcelas" />
 
-	      <Button
-	          android:layout_width="200dip"
-	          android:layout_height="50dip"
-	          android:layout_alignParentBottom="true"
-	          android:layout_centerHorizontal="true"
-	          android:layout_marginBottom="14dp"
-	          android:text="@string/btFinalizar" />
-	     
+	           
      </RelativeLayout>
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+         >
+        
+        <Button
+            android:id="@+id/BtVoltar"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:text="@string/btVoltar" />
+        
+
+        <Button
+            android:id="@+id/BtFinalizar"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:text="@string/btFinalizar"  />
+    </LinearLayout>
+     
 </LinearLayout>
