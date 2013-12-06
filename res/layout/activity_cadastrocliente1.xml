@@ -7,7 +7,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity" >
+    tools:context=".LoginActivity"
+    android:background="@drawable/background"
+     >
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -20,14 +22,19 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/novoCadastro"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/cliente"
-            android:textSize="17sp" />
+            android:textSize="17sp"
+            android:textColor="@android:color/white"
+            
+             />
     </LinearLayout>
 
     <LinearLayout
@@ -41,14 +48,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/nome" />
+            android:text="@string/nome"
+            android:textColor="@android:color/white"
+             />
 
         <EditText
             android:id="@+id/ETxtNome"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" >
+            android:inputType="text"
+            android:background="@android:color/white"
+             >
 
             <requestFocus />
         </EditText>
@@ -65,6 +76,7 @@
             android:layout_gravity="left"
             android:text="@string/cpf"
             android:layout_marginTop="5dp"
+            android:textColor="@android:color/white"
              />
 
         <EditText
@@ -72,7 +84,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" >
+            android:inputType="text"
+            android:background="@android:color/white"
+             >
 
             <requestFocus />
         </EditText>
@@ -83,7 +97,7 @@
             android:layout_gravity="left"
             android:text="@string/rg"
             android:layout_marginTop="5dp"
-            
+            android:textColor="@android:color/white"
              />
 
         <EditText
@@ -91,7 +105,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" >
+            android:inputType="text"
+            android:background="@android:color/white"
+             >
 
             <requestFocus />
         </EditText>
@@ -101,7 +117,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/dataNascimento" />
+            android:text="@string/dataNascimento"
+            android:textColor="@android:color/white"
+             />
     </LinearLayout>
 
     <LinearLayout
@@ -115,7 +133,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="2"
-            android:inputType="number" >
+            android:inputType="number"
+            android:background="@android:color/white"
+             >
 
             <requestFocus />
         </EditText>
@@ -125,7 +145,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="2"
-            android:inputType="number" >
+            android:inputType="number"
+            android:background="@android:color/white"
+             >
 
             <requestFocus />
         </EditText>
@@ -135,7 +157,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="4"
-            android:inputType="number" >
+            android:inputType="number"
+            android:background="@android:color/white"
+             >
 
             <requestFocus />
         </EditText>
@@ -153,13 +177,17 @@
         android:id="@+id/RBMasculino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/masculino" />
+        android:text="@string/masculino"
+        android:textColor="@android:color/white"
+         />
         
         <RadioButton
         android:id="@+id/RBFeminino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/feminino" />
+        android:text="@string/feminino"
+        android:textColor="@android:color/white"
+         />
         
         
     </RadioGroup>

@@ -7,7 +7,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity" >
+    tools:context=".LoginActivity"
+    android:background="@drawable/background"
+     >
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -41,14 +43,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/endereco" />
+            android:text="@string/endereco"
+            android:textColor="@android:color/white"
+            
+             />
 
         <EditText
             android:id="@+id/ETxtEndereco"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" >
+            android:inputType="text"
+            android:background="@android:color/white"
+             >
 
             <requestFocus />
         </EditText>
@@ -62,13 +69,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/numero" />
+            android:text="@string/numero"
+            android:textColor="@android:color/white"
+             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:text="@string/cidade" />
+            android:text="@string/cidade"
+            android:textColor="@android:color/white"
+             />
     </LinearLayout>
 
     <LinearLayout
@@ -81,7 +92,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="4"
-            android:inputType="number" >
+            android:inputType="number"
+            android:background="@android:color/white"
+             >
 
             <requestFocus />
         </EditText>
@@ -91,7 +104,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" >
+            android:inputType="text"
+            android:layout_marginLeft="5dp"
+            
+            android:background="@android:color/white"
+             >
 
             <requestFocus />
         </EditText>
@@ -106,14 +123,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/bairro" />
+            android:text="@string/bairro"
+            android:textColor="@android:color/white"
+             />
 
         <EditText
             android:id="@+id/ETxtBairro"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" >
+            android:inputType="text"
+            android:background="@android:color/white"
+             >
 
             <requestFocus />
         </EditText>
@@ -122,14 +143,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/pais" />
+            android:text="@string/pais"
+            android:textColor="@android:color/white"
+             />
 
         <EditText
             android:id="@+id/ETxtPais"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" >
+            android:inputType="text"
+            android:background="@android:color/white"
+             >
 
             <requestFocus />
         </EditText>
@@ -138,14 +163,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/cep" />
+            android:text="@string/cep"
+            android:textColor="@android:color/white"
+             />
 
         <EditText
             android:id="@+id/ETxtCep"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" >
+            android:inputType="text"
+            android:background="@android:color/white"
+             >
 
             <requestFocus />
         </EditText>
