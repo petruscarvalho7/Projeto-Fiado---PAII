@@ -8,10 +8,29 @@
     <string name="infoCadastral">Informações Cadastrais</string>
     <string name="menuCliente">Menu Cliente</string>
     <string name="menuProduto">Menu Produto</string>
+    <string name="menuVenda">Menu Venda</string>
     <string name="novoCadastro">Novo Cadastro</string>
     <string name="cliente">Cliente</string>
     <string name="vendedor">Vendedor</string>
     <string name="logo">Logo Marca</string>
+    <string name="nomeEntradaPagamento">Pagamento</string>
+    <string name="formaDePagamento">Forma de Pagamento</string>
+    
+    <string-array name="arrayPagamento">
+        <item>Dinheiro</item>
+        <item>Cartão</item>
+    </string-array>
+    
+    <string name="numeroParcelas">N Parcelas</string>
+    
+    <string-array name="arrayNumeroParcelas">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    
     
 
 </resources>

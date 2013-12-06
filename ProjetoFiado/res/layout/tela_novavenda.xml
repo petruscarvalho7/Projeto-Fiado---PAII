@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#8B8B83">
+    
+    <QuickContactBadge 
+        android:id="@+id/fotoContatoTelaCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        />
+    <TextView 
+        android:id="@+id/nomeUsuario"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+ 		android:text="@string/nomeUsuario"     
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btAdd"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/btAdd"
+            android:src="@android:drawable/ic_menu_add" />
+
+        <ImageView
+            android:id="@+id/btDelete"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btAdd"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/btDelete"
+            android:src="@android:drawable/ic_delete" />
+
+        <ListView
+            android:id="@+id/lvProdutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btAdd"
+            android:background="@drawable/bg_key"
+            android:fadeScrollbars="true"
+            android:layout_marginBottom="60dip" >
+
+        </ListView>
+
+        <Button
+            android:id="@+id/btProximo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/btProximo" />
+
+    </RelativeLayout>
+
+</LinearLayout>

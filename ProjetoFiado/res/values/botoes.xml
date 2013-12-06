@@ -38,5 +38,9 @@
     <string name="btEsqueceuSenha">Esqueceu a senha ?</string>
     <string name="btLogin">Login</string>
     <string name="btCadastrarNovoUser">Cadastre-se</string>
+    <string name="btNovaVenda">Nova Venda</string>
+    <string name="btAdd">Adicionar</string>
+    <string name="btDelete">Remover</string>
+    <string name="btFinalizar">Finalizar</string>
 	
 </resources>
