@@ -53,7 +53,7 @@
            android:background="@android:drawable/editbox_background"
            android:layout_toRightOf="@id/lbSenha"
            android:layout_alignTop="@id/lbSenha"
-           android:inputType="text"
+           android:inputType="textPassword"
            />
        
        <TextView 
@@ -72,7 +72,7 @@
            android:background="@android:drawable/editbox_background"
            android:layout_toRightOf="@id/lbReSenha"
            android:layout_alignTop="@id/lbReSenha"
-           android:inputType="text"
+           android:inputType="textPassword"
            />
 
     
@@ -87,17 +87,17 @@
          >
         
         <Button
-            android:id="@+id/BtVoltar"
+            android:id="@+id/btVoltar"
             android:layout_width="100dip"
             android:layout_height="50dip"
             android:text="@string/btVoltar" />
         
 
         <Button
-            android:id="@+id/BtProximo"
+            android:id="@+id/btSalvar"
             android:layout_width="100dip"
             android:layout_height="50dip"
-            android:text="@string/btProximo"  />
+            android:text="@string/btSalvar"  />
     </LinearLayout>    
 
 </LinearLayout>

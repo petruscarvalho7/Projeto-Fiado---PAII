@@ -33,18 +33,21 @@
         />
 	    
 	    <Button
+	        android:id="@+id/btNovaVenda"
 	        android:layout_width="200dip"
 	        android:layout_height="50dip"
 	        android:layout_marginTop="10dip"
 	        android:text="@string/btNovaVenda" />
 	    
 	     <Button
+	        android:id="@+id/btBuscar"
 	        android:layout_width="200dip"
 	        android:layout_height="50dip"
 	        android:layout_marginTop="10dip"
 	        android:text="@string/btBuscar" />
 	     
 	      <Button
+	        android:id="@+id/btExcluir"
 	        android:layout_width="200dip"
 	        android:layout_height="50dip"
 	        android:layout_marginTop="10dip"
