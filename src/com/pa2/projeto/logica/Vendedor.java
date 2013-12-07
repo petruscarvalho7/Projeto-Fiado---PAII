@@ -1,11 +1,14 @@
-package com.pa2.projeto;
+package com.pa2.projeto.logica;
 
 import java.util.Date;
 
-public class Cliente extends Pessoa{
+public class Vendedor extends Pessoa{
+	String login;
+	String senha;
 	
-	public Cliente(String nome, String cpf, String rg, Endereco endereco,
+	public Vendedor(String login, String senha, String nome, String cpf, String rg, Endereco endereco,
 			Date dataDeNascimento,String sexo, String telefone, String ddd){
+		
 		super.setNome(nome);
 		super.setCpf(cpf);
 		super.setRg(rg);
@@ -15,6 +18,9 @@ public class Cliente extends Pessoa{
 		super.setTelefone(telefone);
 		super.setDdd(ddd);
 	}
-
 	
+	
+	
+	
+
 }
