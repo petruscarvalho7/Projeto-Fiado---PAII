@@ -97,7 +97,7 @@
 
         <Button
         android:id="@+id/btEsqueceuSenha"
-        android:layout_width="wrap_content"
+        android:layout_width="150dip"
         android:layout_height="wrap_content"
         android:text="@string/btEsqueceuSenha" 
         android:textSize="12sp"
@@ -105,7 +105,7 @@
         />
         <Button
         android:id="@+id/btLogin"
-        android:layout_width="wrap_content"
+        android:layout_width="150dip"
         android:layout_height="wrap_content"
         android:text="@string/btLogin" 
         android:textSize="12sp"

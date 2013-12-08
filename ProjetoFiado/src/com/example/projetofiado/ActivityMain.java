@@ -220,21 +220,30 @@ public class ActivityMain extends Activity {
 		      public void onItemClick(AdapterView<?> parent, final View view,
 		          int position, long id) {
 		        final String item = (String) parent.getItemAtPosition(position);
+		        produtosAdd.add(item);
 		        view.animate().setDuration(2000).alpha(0)
 		            .withEndAction(new Runnable() {
 		              @Override
 		              public void run() {
-		            	produtosAdd.add(item);
 		                list.remove(item);
 		                adapter.notifyDataSetChanged();
 		                view.setAlpha(1);
 		              }
 		            });
+		        
 		      }
 
 		    });
 		  return produtosAdd;
 	}
+	
+	public void popularListViewProdutosComLista(ListView prod, ArrayList<String> produtos){
+		
+	    final StableArrayAdapter adapter = new StableArrayAdapter(this,android.R.layout.simple_list_item_1,produtos);
+	    
+	    prod.setAdapter((ListAdapter) adapter);
+
+}
 	
 	private class StableArrayAdapter extends ArrayAdapter<String> {
 
@@ -263,10 +272,10 @@ public class ActivityMain extends Activity {
 		
 		setContentView(R.layout.tela_formapagamento);
 		
-		Button btVoltar, btProximo;
+		Button btVoltar, btFinalizar;
 		
 		btVoltar = (Button) findViewById(R.id.btVoltar);
-		btProximo = (Button) findViewById(R.id.btProximo);
+		btFinalizar = (Button) findViewById(R.id.btFinalizar);
 		
 		btVoltar.setOnClickListener(new View.OnClickListener(){ 
 			public void onClick(View arg0) {
@@ -276,7 +285,7 @@ public class ActivityMain extends Activity {
 
 		});
 		
-		btProximo.setOnClickListener(new View.OnClickListener(){ 
+		btFinalizar.setOnClickListener(new View.OnClickListener(){ 
 			public void onClick(View arg0) {
 				
 				telaFinalizarVenda(produtosAdicionados);
@@ -298,8 +307,7 @@ public class ActivityMain extends Activity {
 		btVoltar = (Button) findViewById(R.id.btVoltar);
 		btFinalizar = (Button) findViewById(R.id.btProximo);
 		
-		@SuppressWarnings("unused")
-		final ArrayList<String> produtosAdd = popularListViewProdutos(lvProdutos);
+		popularListViewProdutosComLista(lvProdutos, produtosAdicionados);
 		
 		btVoltar.setOnClickListener(new View.OnClickListener(){ 
 			public void onClick(View arg0) {
@@ -311,6 +319,9 @@ public class ActivityMain extends Activity {
 		
 		btFinalizar.setOnClickListener(new View.OnClickListener(){ 
 			public void onClick(View arg0) {
+				
+				Toast t = Toast.makeText(ActivityMain.this, "Venda cadastrada com Sucesso.", Toast.LENGTH_SHORT);
+				t.show();
 				
 				telaMenuPrincipal();
 				
@@ -392,7 +403,7 @@ public class ActivityMain extends Activity {
 						Button btVoltar, btFinalizar;
 						
 						btVoltar = (Button) findViewById(R.id.btVoltar);
-						btFinalizar = (Button) findViewById(R.id.btProximo);
+						btFinalizar = (Button) findViewById(R.id.btFinalizar);
 						
 						btVoltar.setOnClickListener(new View.OnClickListener(){ 
 							public void onClick(View arg0) {
@@ -404,6 +415,9 @@ public class ActivityMain extends Activity {
 						
 						btFinalizar.setOnClickListener(new View.OnClickListener(){ 
 							public void onClick(View arg0) {
+								
+								Toast t = Toast.makeText(ActivityMain.this, "Cliente cadastrado com Sucesso.", Toast.LENGTH_SHORT);
+								t.show();
 								
 								telaGerenciaDeClientes();
 								
