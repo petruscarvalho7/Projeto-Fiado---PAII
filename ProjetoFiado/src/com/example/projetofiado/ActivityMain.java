@@ -154,54 +154,17 @@ public class ActivityMain extends Activity {
 		setContentView(R.layout.tela_novavenda);
 		
 		ListView lvProdutos;
-		
-		lvProdutos = (ListView) findViewById(R.id.lvProdutos);
-		
-		
-		String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
-		        "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
-		        "Linux", "OS/2", "Ubuntu", "Windows7", "Max OS X", "Linux",
-		        "OS/2", "Ubuntu", "Windows7", "Max OS X", "Linux", "OS/2",
-		        "Android", "iPhone", "WindowsMobile" };
-
-		    final ArrayList<String> list = new ArrayList<String>();
-		    for (int i = 0; i < values.length; ++i) {
-		      list.add(values[i]);
-		    }
-		    final StableArrayAdapter adapter = new StableArrayAdapter(this,android.R.layout.simple_list_item_1,list);
-		    lvProdutos.setAdapter((ListAdapter) adapter);
-
-		    lvProdutos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-		    ArrayList<String> produtosAdd = new ArrayList<String>();
-			@Override
-		      public void onItemClick(AdapterView<?> parent, final View view,
-		          int position, long id) {
-		        final String item = (String) parent.getItemAtPosition(position);
-		        view.animate().setDuration(2000).alpha(0)
-		            .withEndAction(new Runnable() {
-		              @Override
-		              public void run() {
-		            	produtosAdd.add(item);
-		                list.remove(item);
-		                adapter.notifyDataSetChanged();
-		                view.setAlpha(1);
-		              }
-		            });
-		      }
-
-		    });
-		  
-
-		  
 		ImageButton btAdd, btDelete;
 		Button btVoltar, btProximo;
-  
+		
+		lvProdutos = (ListView) findViewById(R.id.lvProdutos);
 		btAdd = (ImageButton) findViewById(R.id.btAdd);
 		btDelete = (ImageButton) findViewById(R.id.btDelete);
 		btVoltar = (Button) findViewById(R.id.btVoltar);
 		btProximo = (Button) findViewById(R.id.btProximo);
 		
+		final ArrayList<String> produtosAdd = popularListViewProdutos(lvProdutos);
+
 		btAdd.setOnClickListener(new View.OnClickListener(){ 
 			public void onClick(View arg0) {
 				//TO DO
@@ -228,14 +191,52 @@ public class ActivityMain extends Activity {
 		btProximo.setOnClickListener(new View.OnClickListener(){ 
 			public void onClick(View arg0) {
 				
-				telaFormaDePagamento();
+				telaFormaDePagamento(produtosAdd);
 			}
 
 		});
 		
 	}
 	
-	 private class StableArrayAdapter extends ArrayAdapter<String> {
+	public ArrayList<String> popularListViewProdutos(ListView lvProdutos){
+		
+			String[] values = new String[] { "Produto1", "Produto2", "Produto3",
+		        "Produto4", "Produto5", "Produto6", "Produto7", "Produto8",
+		        "Produto9", "Produto10" };
+
+			final ArrayList<String> produtosAdd = new ArrayList<String>();
+			
+		    final ArrayList<String> list = new ArrayList<String>();
+		    for (int i = 0; i < values.length; ++i) {
+		      list.add(values[i]);
+		    }
+		    final StableArrayAdapter adapter = new StableArrayAdapter(this,android.R.layout.simple_list_item_1,list);
+		    lvProdutos.setAdapter((ListAdapter) adapter);
+
+		    lvProdutos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+		    
+			@Override
+		      public void onItemClick(AdapterView<?> parent, final View view,
+		          int position, long id) {
+		        final String item = (String) parent.getItemAtPosition(position);
+		        view.animate().setDuration(2000).alpha(0)
+		            .withEndAction(new Runnable() {
+		              @Override
+		              public void run() {
+		            	produtosAdd.add(item);
+		                list.remove(item);
+		                adapter.notifyDataSetChanged();
+		                view.setAlpha(1);
+		              }
+		            });
+		      }
+
+		    });
+		  return produtosAdd;
+	}
+	
+	private class StableArrayAdapter extends ArrayAdapter<String> {
 
 		    HashMap<String, Integer> mIdMap = new HashMap<String, Integer>();
 
@@ -258,17 +259,171 @@ public class ActivityMain extends Activity {
 		  }
 		
 
-	private void telaFormaDePagamento() {
+	private void telaFormaDePagamento(final ArrayList<String> produtosAdicionados) {
 		
 		setContentView(R.layout.tela_formapagamento);
+		
+		Button btVoltar, btProximo;
+		
+		btVoltar = (Button) findViewById(R.id.btVoltar);
+		btProximo = (Button) findViewById(R.id.btProximo);
+		
+		btVoltar.setOnClickListener(new View.OnClickListener(){ 
+			public void onClick(View arg0) {
+				
+				telaNovaVenda();
+			}
+
+		});
+		
+		btProximo.setOnClickListener(new View.OnClickListener(){ 
+			public void onClick(View arg0) {
+				
+				telaFinalizarVenda(produtosAdicionados);
+				
+			}
+
+		});
+		
+	}
+
+	protected void telaFinalizarVenda(final ArrayList<String> produtosAdicionados) {
+		
+		setContentView(R.layout.tela_finalizarvenda);
+		
+		ListView lvProdutos;
+		Button btVoltar, btFinalizar;
+		
+		lvProdutos = (ListView) findViewById(R.id.lvProdutos);
+		btVoltar = (Button) findViewById(R.id.btVoltar);
+		btFinalizar = (Button) findViewById(R.id.btProximo);
+		
+		@SuppressWarnings("unused")
+		final ArrayList<String> produtosAdd = popularListViewProdutos(lvProdutos);
+		
+		btVoltar.setOnClickListener(new View.OnClickListener(){ 
+			public void onClick(View arg0) {
+				
+				telaFormaDePagamento(produtosAdicionados);
+			}
+
+		});
+		
+		btFinalizar.setOnClickListener(new View.OnClickListener(){ 
+			public void onClick(View arg0) {
+				
+				telaMenuPrincipal();
+				
+			}
+
+		});
 		
 	}
 
 	public void telaGerenciaDeClientes(){
 		
 		setContentView(R.layout.menu_cliente);
+		
+		Button btNovoCadastro;
+		
+		btNovoCadastro = (Button) findViewById(R.id.btNovoCadastroCliente);
+		
+		btNovoCadastro.setOnClickListener(new View.OnClickListener(){ 
+			public void onClick(View arg0) {
+				
+				telaCadastroDeClientePrimeira();
+			}
+		});
+		
 	}
 	
+	protected void telaCadastroDeClientePrimeira() {
+		
+		setContentView(R.layout.tela_cadastrocliente_primeira);
+		
+		Button btVoltar, btProximo;
+		
+		btVoltar = (Button) findViewById(R.id.btVoltar);
+		btProximo = (Button) findViewById(R.id.btProximo);
+		
+		btVoltar.setOnClickListener(new View.OnClickListener(){ 
+			public void onClick(View arg0) {
+				
+				telaGerenciaDeClientes();
+			}
+
+		});
+		
+		btProximo.setOnClickListener(new View.OnClickListener(){ 
+			public void onClick(View arg0) {
+				
+				telaCadastroDeClienteSegunda();
+				
+			}
+
+			private void telaCadastroDeClienteSegunda() {
+
+				setContentView(R.layout.tela_cadastrocliente_segunda);
+				
+				Button btVoltar, btProximo;
+				
+				btVoltar = (Button) findViewById(R.id.btVoltar);
+				btProximo = (Button) findViewById(R.id.btProximo);
+				
+				btVoltar.setOnClickListener(new View.OnClickListener(){ 
+					public void onClick(View arg0) {
+						
+						telaCadastroDeClientePrimeira();
+					}
+
+				});
+				
+				btProximo.setOnClickListener(new View.OnClickListener(){ 
+					public void onClick(View arg0) {
+						
+						telaCadastroDeClienteFinal();
+						
+					}
+
+					private void telaCadastroDeClienteFinal() {
+
+						setContentView(R.layout.tela_cadastrocliente_final);
+						
+						Button btVoltar, btFinalizar;
+						
+						btVoltar = (Button) findViewById(R.id.btVoltar);
+						btFinalizar = (Button) findViewById(R.id.btProximo);
+						
+						btVoltar.setOnClickListener(new View.OnClickListener(){ 
+							public void onClick(View arg0) {
+								
+								telaCadastroDeClienteSegunda();
+							}
+
+						});
+						
+						btFinalizar.setOnClickListener(new View.OnClickListener(){ 
+							public void onClick(View arg0) {
+								
+								telaGerenciaDeClientes();
+								
+							}
+
+
+						});
+						
+					}
+
+				});
+				
+			}
+
+		});
+		
+		
+		
+	}
+
 	public void telaGerenciaDeProdutos(){
 		
 		setContentView(R.layout.menu_produto);
