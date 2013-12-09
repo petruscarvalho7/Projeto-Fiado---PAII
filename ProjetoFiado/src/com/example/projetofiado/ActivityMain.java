@@ -140,13 +140,14 @@ public class ActivityMain extends Activity {
 
 		setContentView(R.layout.menu_produto);
 
-		Button btNovaVenda, btBuscar, btExcluir;
+		Button btNovoProduto, btBuscar, btExcluir, btVoltar;
 
-		btNovaVenda = (Button) findViewById(R.id.btNovaVenda);
-		btBuscar = (Button) findViewById(R.id.btBuscar);
-		btExcluir = (Button) findViewById(R.id.btExcluir);
+		btNovoProduto = (Button) findViewById(R.id.btAdicionarProduto);
+		btBuscar = (Button) findViewById(R.id.btBuscarProduto);
+		btExcluir = (Button) findViewById(R.id.btExcluirProduto);
+		btVoltar = (Button) findViewById(R.id.BtVoltar);
 
-		btNovaVenda.setOnClickListener(new View.OnClickListener() {
+		btNovoProduto.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
 
 				telaNovoProduto();
@@ -165,6 +166,14 @@ public class ActivityMain extends Activity {
 			public void onClick(View arg0) {
 
 				telaExcluirProduto();
+			}
+
+		});
+		
+		btVoltar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View arg0) {
+
+				telaGerenciaDeProdutos();
 			}
 
 		});
@@ -210,10 +219,10 @@ public class ActivityMain extends Activity {
             
             setContentView(R.layout.tela_cadastro_produto);
             
-            Button btVoltar, btProximo;
+            Button btVoltar, btSalvar;
             
             btVoltar = (Button) findViewById(R.id.btVoltar);
-            btProximo = (Button) findViewById(R.id.btProximo);
+            btSalvar = (Button) findViewById(R.id.btSalvar);
             
             btVoltar.setOnClickListener(new View.OnClickListener(){ 
                     public void onClick(View arg0) {
@@ -223,8 +232,12 @@ public class ActivityMain extends Activity {
 
             });
             
-            btProximo.setOnClickListener(new View.OnClickListener(){ 
+            btSalvar.setOnClickListener(new View.OnClickListener(){ 
                     public void onClick(View arg0) {
+                    	
+                    	Toast t = Toast.makeText(ActivityMain.this,
+        						"Produto salvo com Sucesso.", Toast.LENGTH_SHORT);
+        				t.show();
                             
                     	telaGerenciaDeProdutos();
                             
