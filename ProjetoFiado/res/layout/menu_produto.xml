@@ -33,39 +33,33 @@
         />
 	    
 	    <Button
+	        android:id="@+id/btAdicionarProduto"
 	        android:layout_width="200dip"
 	        android:layout_height="50dip"
 	        android:layout_marginTop="10dip"
 	        android:text="@string/btNovoCadastroCliente" />
 	    
 	     <Button
+	        android:id="@+id/btBuscarProduto"
 	        android:layout_width="200dip"
 	        android:layout_height="50dip"
 	        android:layout_marginTop="10dip"
 	        android:text="@string/btBuscar" />
 	     
 	      <Button
+	        android:id="@+id/btExcluirProduto"
 	        android:layout_width="200dip"
 	        android:layout_height="50dip"
 	        android:layout_marginTop="10dip"
 	        android:text="@string/btExcluir" />
-    
-    </LinearLayout>
-    
-    <LinearLayout
-        android:layout_marginTop="60dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-         >
 
-        <Button
-            android:id="@+id/BtVoltar"
-            android:layout_width="100dip"
-            android:layout_height="50dip"
-            android:text="@string/btVoltar"
-            android:gravity="center"
-             />
+	      <Button
+	          android:id="@+id/btVoltar"
+	          android:layout_width="100dip"
+	          android:layout_height="50dip"
+	          android:gravity="center"
+	          android:text="@string/btVoltar" />
+    
     </LinearLayout>
+    
 </LinearLayout>

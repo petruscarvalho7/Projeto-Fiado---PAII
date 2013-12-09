@@ -145,7 +145,7 @@ public class ActivityMain extends Activity {
 		btNovoProduto = (Button) findViewById(R.id.btAdicionarProduto);
 		btBuscar = (Button) findViewById(R.id.btBuscarProduto);
 		btExcluir = (Button) findViewById(R.id.btExcluirProduto);
-		btVoltar = (Button) findViewById(R.id.BtVoltar);
+		btVoltar = (Button) findViewById(R.id.btVoltar);
 
 		btNovoProduto.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
@@ -173,7 +173,7 @@ public class ActivityMain extends Activity {
 		btVoltar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
 
-				telaGerenciaDeProdutos();
+				telaMenuPrincipal();
 			}
 
 		});
