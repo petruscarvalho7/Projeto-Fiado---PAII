@@ -407,8 +407,7 @@ public class ActivityMain extends Activity {
 		btVoltar = (Button) findViewById(R.id.btVoltar);
 		btFinalizar = (Button) findViewById(R.id.btProximo);
 
-		@SuppressWarnings("unused")
-		final ArrayList<String> produtosAdd = popularListViewProdutos(lvProdutos);
+		popularListViewProdutosComProdutos(produtosAdicionados, lvProdutos);
 
 		btVoltar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
@@ -427,6 +426,36 @@ public class ActivityMain extends Activity {
 
 		});
 
+	}
+
+	private void popularListViewProdutosComProdutos(
+			ArrayList<String> produtos, ListView lvProdutos) {
+		
+		final ArrayList<String> list = produtos;
+		final StableArrayAdapter adapter = new StableArrayAdapter(this,
+		android.R.layout.simple_list_item_1, list);
+		lvProdutos.setAdapter((ListAdapter) adapter);
+
+		lvProdutos
+		.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent,
+					final View view, int position, long id) {
+				final String item = (String) parent
+						.getItemAtPosition(position);
+				view.animate().setDuration(2000).alpha(0)
+						.withEndAction(new Runnable() {
+							@Override
+							public void run() {
+								list.remove(item);
+								adapter.notifyDataSetChanged();
+								view.setAlpha(1);
+							}
+						});
+			}
+
+		});
 	}
 
 	public void telaGerenciaDeClientes() {
