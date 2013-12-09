@@ -371,10 +371,10 @@ public class ActivityMain extends Activity {
 
 		setContentView(R.layout.tela_formapagamento);
 
-		Button btVoltar, btProximo;
+		Button btVoltar, btFinalizar;
 
 		btVoltar = (Button) findViewById(R.id.btVoltar);
-		btProximo = (Button) findViewById(R.id.btProximo);
+		btFinalizar = (Button) findViewById(R.id.btFinalizar);
 
 		btVoltar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
@@ -384,7 +384,7 @@ public class ActivityMain extends Activity {
 
 		});
 
-		btProximo.setOnClickListener(new View.OnClickListener() {
+		btFinalizar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
 
 				telaFinalizarVenda(produtosAdicionados);
