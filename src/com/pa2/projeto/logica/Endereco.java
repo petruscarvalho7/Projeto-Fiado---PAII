@@ -2,6 +2,12 @@ package com.pa2.projeto.logica;
 
 public class Endereco {
 	
+	/*Classe responsável pela obtenção dos dados
+	 * de endereçamento tanto de clientes quanto de
+	 * vendedores.
+	 * 
+	 */
+		
 	String rua;
 	int numero;
 	String bairro;

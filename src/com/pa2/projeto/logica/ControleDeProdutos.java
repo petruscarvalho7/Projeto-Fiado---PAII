@@ -5,14 +5,22 @@ import java.util.Iterator;
 import java.util.List;
 
 public class ControleDeProdutos {
+	
+	/*Classe responsável pelo armazenamento de toda informação
+	 * relacionada a cadastro, exclusão, busca e alteração de produtos.
+	 */
+	
 	private List<Produto> produtos;
 
 	public ControleDeProdutos() {
 		produtos = new ArrayList<Produto>();
 	}
-
-	// Cadastrar
-
+	/*
+	 * Cadastro do produto
+	 * 
+	 * Recebe um objeto do tipo produto tendo a responsabilidade de verificar a
+	 * existência ou cadastrar
+	 */
 	public void cadastrarProduto(Produto produto)
 			throws ProdutoJaCadastradoException {
 
@@ -21,9 +29,12 @@ public class ControleDeProdutos {
 		}
 		produtos.add(produto);
 	}
-
-	// Excluir - retorna o produto removido
-
+	/*
+	 * Excluir - retorna o produto removido
+	 * 
+	 * Recebe o código do produto tendo a responsabilidade de verificar a
+	 * existência ou excluir.
+	 */
 	public Produto excluirProduto(int codigo)
 			throws ProdutoInexistenteException {
 
@@ -35,8 +46,12 @@ public class ControleDeProdutos {
 		produtos.remove(produto);
 		return produto;
 	}
-
-	// Verificar código já cadastrado - Retorna True se já cadastrado
+	/*
+	 * Verificar código já cadastrado - Retorna True se já cadastrado
+	 * 
+	 * Recebe o código do produto tendo a responsabilidade de verificar se
+	 * existe ou não o produto informado
+	 */
 	public boolean verificarProdutoExistente(int codigo) {
 
 		boolean existe = false;
@@ -51,7 +66,13 @@ public class ControleDeProdutos {
 		return existe;
 	}
 
-	// Busca e retorna o produto caso encontre, retornado null caso negativo
+	/*
+	 * Busca e retorna o produto caso encontre, retornado null caso negativo
+	 * 
+	 * Recebe o código do produto sendo responsável pela busca retornando null
+	 * caso não encontre.
+	 */
+
 	public Produto buscaProduto(int codigo) {
 		Produto produto = null;
 		boolean existe = false;
@@ -66,17 +87,23 @@ public class ControleDeProdutos {
 		return produto;
 	}
 
-	// Faz a alteração dos dados do cliente
+	// Faz a alteração dos dados do produto
 	/*
-	 * Já supondo que a verificação de existência já tenha sido feita
+	 * Já supondo que a verificação de existência já tenha sido feita Recebe
+	 * como parâmetro um objeto do tipo produto para ser substituído pelo
+	 * anterior.
 	 */
-	public void anterarProduto(Produto produto) {
+	public void alterarProduto(Produto produto) {
 		int posição = getPosicaoProduto(produto);
 		produtos.set(posição, produto);
-
 	}
 
-	// Verifica a posição do cliente na lista
+	/*
+	 * Verifica a posição do cliente na lista
+	 * 
+	 * Faz a busca do produto e retorna a posição que ele se encontra na lista
+	 */
+
 	private int getPosicaoProduto(Produto produtoP) {
 		int contador = 0;
 		Produto produto;
@@ -91,7 +118,5 @@ public class ControleDeProdutos {
 			contador++;
 		}
 		return contador;
-
 	}
-
 }

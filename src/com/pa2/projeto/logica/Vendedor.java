@@ -3,6 +3,12 @@ package com.pa2.projeto.logica;
 import java.util.Date;
 
 public class Vendedor extends Pessoa{
+	
+	/*Classe responsável pelo armazenamento temporário de
+	 * dados do vendedor bem como seus dados pessoais.
+	 * 
+	 */
+	
 	String login;
 	String senha;
 	

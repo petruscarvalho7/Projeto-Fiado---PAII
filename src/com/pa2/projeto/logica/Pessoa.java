@@ -3,6 +3,11 @@ package com.pa2.projeto.logica;
 import java.util.Date;
 
 public class Pessoa {
+	
+	/*Classe responsável pelo armazenamento dos dados
+	 * pessoais tanto de clientes quanto de vendedores.
+	 * 
+	 */
 
 	private String nome;
 	private String cpf;

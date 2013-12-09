@@ -5,14 +5,23 @@ import java.util.Iterator;
 import java.util.List;
 
 public class ControleDeClientes {
-
+	
+	/*Classe responsável pelo armazenamento de toda informação
+	 * relacionada a cadastro, exclusão, busca e alteração de clientes.
+	 */
+	
 	private List<Cliente> clientes;
 
 	public ControleDeClientes() {
 		clientes = new ArrayList<Cliente>();
 	}
 
-	// Cadastrar
+	/*
+	 * Cadastro do cliente
+	 * 
+	 * Recebe um objeto do tipo cliente, tendo a responsabilidade de verificar a
+	 * existência ou cadastrar
+	 */
 	public void cadastrarCliente(Cliente cliente)
 			throws ClienteJaCadastradoException {
 
@@ -22,7 +31,12 @@ public class ControleDeClientes {
 		clientes.add(cliente);
 	}
 
-	// Excluir - retorna o cliente removido
+	/*
+	 * Excluir - retorna o cliente removido
+	 * 
+	 * Recebe o código do cliente tendo a responsabilidade de verificar a
+	 * existência ou excluir.
+	 */
 	public Cliente excluirCliente(String cpf)
 			throws ClienteInexistenteException {
 
@@ -35,7 +49,12 @@ public class ControleDeClientes {
 		return cliente;
 	}
 
-	// Verificar CPF já cadastrado - Retorna True se já cadastrado
+	/*
+	 * Verificar cpf já cadastrado - Retorna True se já cadastrado
+	 * 
+	 * Recebe o cpf do cliente tendo a responsabilidade de verificar se
+	 * existe ou não o cpf informado
+	 */
 	public boolean verificarCpfExistente(String cpf) {
 
 		boolean existe = false;
@@ -50,7 +69,12 @@ public class ControleDeClientes {
 		return existe;
 	}
 
-	// Busca e retorna o cliente caso encontre, retornado null caso negativo
+	/*
+	 * Busca e retorna o cliente caso encontre, retornado null caso negativo
+	 * 
+	 * Recebe o cpf do cliente sendo responsável pela busca retornando null
+	 * caso não encontre.
+	 */
 	public Cliente buscaCliente(String cpf) {
 		Cliente cliente = null;
 		boolean existe = false;
