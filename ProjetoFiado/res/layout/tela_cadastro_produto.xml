@@ -88,12 +88,14 @@
          >
         
         <Button
+            android:id="@+id/btVoltar"
             android:layout_width="100dip"
             android:layout_height="50dip"
             android:text="@string/btVoltar" />
         
 
         <Button
+            android:id="@+id/btSalvar"
             android:layout_width="100dip"
             android:layout_height="50dip"
             android:text="@string/btSalvar" />
