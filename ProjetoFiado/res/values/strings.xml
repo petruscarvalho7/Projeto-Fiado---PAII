@@ -23,7 +23,9 @@
     <string name="btVoltar">Voltar</string>
     <string name="editar">Editar</string>
     <string name="perfil">Perfil</string>
+    <string name="nomeCliente">Sem cliente selecionado.</string>
     <string name="observacao">Obs.: Para exclusão de Produtos, clique sobre o mesmo.</string>
+    <string name="observacaoEditar">Obs.: Para edição de Venda, clique sobre o mesmo.</string>
     
     
     <string-array name="arrayPagamento">

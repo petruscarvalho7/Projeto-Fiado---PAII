@@ -4,6 +4,7 @@
     <string name="btGerenciarVendas">Gerenciar Vendas</string>
     <string name="lbCadastroUsuario">Cadastrar Usuário</string>
     <string name="btCadastrar">Cadastrar</string>
+    <string name="btSelecionarCliente">Selecionar Cliente</string>
     <string name="btGerenciarClientes">Gerenciar Clientes</string>
     <string name="btGerenciarProdutos">Gerenciar Produtos</string>
     <string name="btSair">Sair</string>

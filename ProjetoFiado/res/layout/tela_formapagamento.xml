@@ -20,16 +20,6 @@
         android:orientation="vertical" >
 
 	     <Spinner
-	         android:id="@+id/spPagamento"
-	         android:layout_width="wrap_content"
-	         android:layout_height="wrap_content"
-	         android:layout_alignParentLeft="true"
-	         android:layout_alignParentTop="true"
-	         android:layout_marginTop="32dp"
-	         android:entries="@array/arrayPagamento"
-	         android:prompt="@string/nomeEntradaPagamento" />
-
-	     <Spinner
 	         android:id="@+id/spParcelas"
 	         android:layout_width="wrap_content"
 	         android:layout_height="wrap_content"
@@ -39,6 +29,23 @@
 	         android:entries="@array/arrayNumeroParcelas"
 	         android:prompt="@string/numeroParcelas" />
 
+	       <Button
+	           android:id="@+id/btSelecionarCliente"
+	           android:layout_width="100dip"
+	           android:layout_height="50dip"
+	           android:layout_alignParentLeft="true"
+	           android:layout_alignParentRight="true"
+	           android:layout_alignParentTop="true"
+	           android:text="@string/btSelecionarCliente" />
+
+	       <Spinner
+	           android:id="@+id/spPagamento"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_alignParentLeft="true"
+	           android:layout_below="@+id/btSelecionarCliente"
+	           android:entries="@array/arrayPagamento"
+	           android:prompt="@string/nomeEntradaPagamento" />
 	           
      </RelativeLayout>
      <LinearLayout

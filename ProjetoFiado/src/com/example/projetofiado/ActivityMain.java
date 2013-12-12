@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -49,7 +50,7 @@ public class ActivityMain extends Activity {
 		btLogin.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
 
-				telaMenuPrincipal();
+				telaMenuPrincipal(false);
 			}
 		});
 
@@ -104,11 +105,12 @@ public class ActivityMain extends Activity {
 
 		setContentView(R.layout.menu_venda);
 
-		Button btNovaVenda, btBuscar, btExcluir;
+		Button btNovaVenda, btBuscar, btExcluir, btVoltar;
 
 		btNovaVenda = (Button) findViewById(R.id.btNovaVenda);
 		btBuscar = (Button) findViewById(R.id.btBuscar);
 		btExcluir = (Button) findViewById(R.id.btExcluir);
+		btVoltar = (Button) findViewById(R.id.btVoltar);
 
 		btNovaVenda.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
@@ -129,6 +131,14 @@ public class ActivityMain extends Activity {
 			public void onClick(View arg0) {
 
 				telaExcluirVenda();
+			}
+
+		});
+		
+		btVoltar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View arg0) {
+
+				telaMenuPrincipal(true);
 			}
 
 		});
@@ -169,15 +179,14 @@ public class ActivityMain extends Activity {
 			}
 
 		});
-		
+
 		btVoltar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
 
-				telaMenuPrincipal();
+				telaMenuPrincipal(true);
 			}
 
 		});
-
 
 	}
 
@@ -207,43 +216,43 @@ public class ActivityMain extends Activity {
 			}
 		});
 
-		
 	}
 
 	protected void telaBuscarProduto() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	protected void telaNovoProduto() {
-            
-            setContentView(R.layout.tela_cadastro_produto);
-            
-            Button btVoltar, btSalvar;
-            
-            btVoltar = (Button) findViewById(R.id.btVoltar);
-            btSalvar = (Button) findViewById(R.id.btSalvar);
-            
-            btVoltar.setOnClickListener(new View.OnClickListener(){ 
-                    public void onClick(View arg0) {
-                            
-                            telaGerenciaDeProdutos();
-                    }
 
-            });
-            
-            btSalvar.setOnClickListener(new View.OnClickListener(){ 
-                    public void onClick(View arg0) {
-                    	
-                    	Toast t = Toast.makeText(ActivityMain.this,
-        						"Produto salvo com Sucesso.", Toast.LENGTH_SHORT);
-        				t.show();
-                            
-                    	telaGerenciaDeProdutos();
-                            
-                    }
-            });
+		setContentView(R.layout.tela_cadastro_produto);
+
+		Button btVoltar, btSalvar;
+
+		btVoltar = (Button) findViewById(R.id.btVoltar);
+		btSalvar = (Button) findViewById(R.id.btSalvar);
+
+		btVoltar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View arg0) {
+
+				telaGerenciaDeProdutos();
+			}
+
+		});
+
+		btSalvar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View arg0) {
+
+				Toast t = Toast.makeText(ActivityMain.this,
+						"Produto salvo com Sucesso.", Toast.LENGTH_SHORT);
+				t.show();
+
+				telaGerenciaDeProdutos();
+
+			}
+		});
 	}
+
 	// ===--------------------------------------------------------------------------
 	private void telaExcluirVenda() {
 		// TO DO
@@ -251,7 +260,8 @@ public class ActivityMain extends Activity {
 	}
 
 	private void telaBuscarVenda() {
-		// TO DO
+		
+		
 
 	}
 
@@ -259,7 +269,7 @@ public class ActivityMain extends Activity {
 
 		setContentView(R.layout.tela_novavenda);
 
-		ListView lvProdutos;
+		final ListView lvProdutos;
 		ImageButton btAdd, btDelete;
 		Button btVoltar, btProximo;
 
@@ -273,14 +283,26 @@ public class ActivityMain extends Activity {
 
 		btAdd.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
-				// TO DO
 
+				if (produtosAdd.isEmpty()) {
+					Toast t = Toast.makeText(ActivityMain.this,
+							"Você precisa cadastrar algum produto.", Toast.LENGTH_SHORT);
+					t.show();
+
+				} else {
+					telaFormaDePagamento(produtosAdd);
+				}
 			}
 		});
 
 		btDelete.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
-				// TO DO
+				
+				Toast t = Toast.makeText(ActivityMain.this, produtosAdd.size() +
+						" produtos deselecionados.", Toast.LENGTH_SHORT);
+				t.show();
+				
+				telaNovaVenda();
 
 			}
 
@@ -297,7 +319,15 @@ public class ActivityMain extends Activity {
 		btProximo.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
 
-				telaFormaDePagamento(produtosAdd);
+				if (produtosAdd.isEmpty()) {
+					Toast t = Toast.makeText(ActivityMain.this,
+							"Você precisa cadastrar algum produto.", Toast.LENGTH_SHORT);
+					t.show();
+
+				} else {
+					telaFormaDePagamento(produtosAdd);
+				}
+
 			}
 
 		});
@@ -420,7 +450,7 @@ public class ActivityMain extends Activity {
 		btFinalizar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
 
-				telaMenuPrincipal();
+				telaMenuPrincipal(true);
 
 			}
 
@@ -428,49 +458,58 @@ public class ActivityMain extends Activity {
 
 	}
 
-	private void popularListViewProdutosComProdutos(
-			ArrayList<String> produtos, ListView lvProdutos) {
-		
+	private void popularListViewProdutosComProdutos(ArrayList<String> produtos,
+			ListView lvProdutos) {
+
 		final ArrayList<String> list = produtos;
 		final StableArrayAdapter adapter = new StableArrayAdapter(this,
-		android.R.layout.simple_list_item_1, list);
+				android.R.layout.simple_list_item_1, list);
 		lvProdutos.setAdapter((ListAdapter) adapter);
 
 		lvProdutos
-		.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+				.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
-			@Override
-			public void onItemClick(AdapterView<?> parent,
-					final View view, int position, long id) {
-				final String item = (String) parent
-						.getItemAtPosition(position);
-				view.animate().setDuration(2000).alpha(0)
-						.withEndAction(new Runnable() {
-							@Override
-							public void run() {
-								list.remove(item);
-								adapter.notifyDataSetChanged();
-								view.setAlpha(1);
-							}
-						});
-			}
+					@Override
+					public void onItemClick(AdapterView<?> parent,
+							final View view, int position, long id) {
+						final String item = (String) parent
+								.getItemAtPosition(position);
+						view.animate().setDuration(2000).alpha(0)
+								.withEndAction(new Runnable() {
+									@Override
+									public void run() {
+										list.remove(item);
+										adapter.notifyDataSetChanged();
+										view.setAlpha(1);
+									}
+								});
+					}
 
-		});
+				});
 	}
 
 	public void telaGerenciaDeClientes() {
 
 		setContentView(R.layout.menu_cliente);
 
-		Button btNovoCadastro;
+		Button btNovoCadastro, btVoltar;
 
 		btNovoCadastro = (Button) findViewById(R.id.btNovoCadastroCliente);
-
+		btVoltar = (Button) findViewById(R.id.btVoltar);
+		
 		btNovoCadastro.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
 
 				telaCadastroDeClientePrimeira();
 			}
+		});
+		
+		btVoltar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View arg0) {
+
+				telaMenuPrincipal(true);
+			}
+
 		});
 
 	}
@@ -530,7 +569,7 @@ public class ActivityMain extends Activity {
 						Button btVoltar, btFinalizar;
 
 						btVoltar = (Button) findViewById(R.id.btVoltar);
-						btFinalizar = (Button) findViewById(R.id.btProximo);
+						btFinalizar = (Button) findViewById(R.id.btFinalizar);
 
 						btVoltar.setOnClickListener(new View.OnClickListener() {
 							public void onClick(View arg0) {
@@ -560,16 +599,25 @@ public class ActivityMain extends Activity {
 
 	}
 
-	public void telaMenuPrincipal() {
+	public void telaMenuPrincipal(boolean perfil) {
 
 		setContentView(R.layout.menu_principal);
 
-		Button btGerVendas, btGerClientes, btGerProdutos;
+		Button btGerVendas, btGerClientes, btGerProdutos, btSair;
+		final Button btPerfil;
 
 		btGerVendas = (Button) findViewById(R.id.btGerVendas);
 		btGerClientes = (Button) findViewById(R.id.btGerenciarClientes);
 		btGerProdutos = (Button) findViewById(R.id.btGerenciarProdutos);
-
+		btSair = (Button) findViewById(R.id.btSair);
+		btPerfil = (Button) findViewById(R.id.btPerfil);
+		
+		if(!perfil){
+			btPerfil.setBackgroundColor(Color.YELLOW);
+		}else{
+			btPerfil.setBackgroundColor(Color.GREEN);
+		}
+		
 		btGerVendas.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
 
@@ -590,6 +638,49 @@ public class ActivityMain extends Activity {
 				telaGerenciaDeProdutos();
 			}
 		});
+		
+
+		btPerfil.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View arg0) {
+
+				telaPerfil();
+				
+			}
+		});
+		
+		btSair.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View arg0) {
+
+				telaLogin();
+			}
+		});
+
+	}
+
+	protected void telaPerfil() {
+
+		setContentView(R.layout.tela_perfil);
+		
+		Button btVoltar, btSalvar;
+
+		btVoltar = (Button) findViewById(R.id.btVoltar);
+		btSalvar = (Button) findViewById(R.id.btSalvar);
+		
+		
+		btVoltar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View arg0) {
+
+				telaMenuPrincipal(true);
+			}
+		});
+
+		btSalvar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View arg0) {
+
+				telaMenuPrincipal(true);
+			}
+		});
+		
 	}
 
 }

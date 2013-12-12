@@ -37,7 +37,8 @@
 	        android:layout_width="200dip"
 	        android:layout_height="50dip"
 	        android:layout_marginTop="10dip"
-	        android:text="@string/btNovaVenda" />
+	        android:text="@string/btNovaVenda"
+	         />
 	    
 	     <Button
 	        android:id="@+id/btBuscar"
@@ -52,6 +53,13 @@
 	        android:layout_height="50dip"
 	        android:layout_marginTop="10dip"
 	        android:text="@string/btExcluir" />
+	      
+	     <Button
+	          android:id="@+id/btVoltar"
+	          android:layout_width="100dip"
+	          android:layout_height="50dip"
+	          android:gravity="center"
+	          android:text="@string/btVoltar" />
     
     </LinearLayout>
 </LinearLayout>
