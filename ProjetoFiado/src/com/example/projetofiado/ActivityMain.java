@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -22,6 +23,13 @@ import android.widget.Toast;
 @SuppressLint("NewApi")
 public class ActivityMain extends Activity {
 
+	final ArrayList<String> nomeVenda = new ArrayList<String>();
+	ArrayList<String> array = new ArrayList<String>();
+	
+	public void addNomeVenda(String a){
+		this.nomeVenda.add(a);
+	}
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -255,14 +263,50 @@ public class ActivityMain extends Activity {
 
 	// ===--------------------------------------------------------------------------
 	private void telaExcluirVenda() {
-		// TO DO
+		
+		setContentView(R.layout.tela_excluirvenda);
+		
+		final ListView lvProdutos;
+		Button btFinalizar;
+
+		lvProdutos = (ListView) findViewById(R.id.lvProdutos);
+		btFinalizar = (Button) findViewById(R.id.btFinalizar);
+		
+		popularListViewProdutosRemover(lvProdutos);
+		
+		btFinalizar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View arg0) {
+
+				telaGerenciaDeVendas();
+			}
+
+		});
+		
 
 	}
 
 	private void telaBuscarVenda() {
 		
+		setContentView(R.layout.tela_buscarvenda);
 		
+		final ListView lvProdutos;
+		Button btVoltar;
 
+		lvProdutos = (ListView) findViewById(R.id.lvProdutos);
+		btVoltar = (Button) findViewById(R.id.btVoltar);
+		
+		popularListViewProdutosComProdutosBusca(this.nomeVenda, lvProdutos);
+		
+		btVoltar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View arg0) {
+
+				telaGerenciaDeVendas();
+			}
+
+		});
+
+		
+		
 	}
 
 	public void telaNovaVenda() {
@@ -272,7 +316,9 @@ public class ActivityMain extends Activity {
 		final ListView lvProdutos;
 		ImageButton btAdd, btDelete;
 		Button btVoltar, btProximo;
+		final EditText nomeVenda;
 
+		nomeVenda = (EditText) findViewById(R.id.campoNome);
 		lvProdutos = (ListView) findViewById(R.id.lvProdutos);
 		btAdd = (ImageButton) findViewById(R.id.btAdd);
 		btDelete = (ImageButton) findViewById(R.id.btDelete);
@@ -280,10 +326,14 @@ public class ActivityMain extends Activity {
 		btProximo = (Button) findViewById(R.id.btProximo);
 
 		final ArrayList<String> produtosAdd = popularListViewProdutos(lvProdutos);
-
+		
+		this.array = produtosAdd;
+		
+		
 		btAdd.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
-
+				addNomeVenda( nomeVenda.getText().toString());
+				
 				if (produtosAdd.isEmpty()) {
 					Toast t = Toast.makeText(ActivityMain.this,
 							"Você precisa cadastrar algum produto.", Toast.LENGTH_SHORT);
@@ -362,8 +412,11 @@ public class ActivityMain extends Activity {
 								.withEndAction(new Runnable() {
 									@Override
 									public void run() {
+										Toast t = Toast.makeText(ActivityMain.this,
+												"Produto:" + item + " adicionado a lista de produtos.", Toast.LENGTH_SHORT);
+										t.show();
 										produtosAdd.add(item);
-										list.remove(item);
+										//list.remove(item);
 										adapter.notifyDataSetChanged();
 										view.setAlpha(1);
 									}
@@ -374,6 +427,45 @@ public class ActivityMain extends Activity {
 		return produtosAdd;
 	}
 
+	public void popularListViewProdutosRemover(ListView lvProdutos) {
+
+		String[] values = new String[] { "Produto1", "Produto2", "Produto3",
+				"Produto4", "Produto5", "Produto6", "Produto7", "Produto8",
+				"Produto9", "Produto10" };
+
+		final ArrayList<String> list = new ArrayList<String>();
+		for (int i = 0; i < values.length; ++i) {
+			list.add(values[i]);
+		}
+		final StableArrayAdapter adapter = new StableArrayAdapter(this,
+				android.R.layout.simple_list_item_1, list);
+		lvProdutos.setAdapter((ListAdapter) adapter);
+
+		lvProdutos
+				.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+					@Override
+					public void onItemClick(AdapterView<?> parent,
+							final View view, int position, long id) {
+						final String item = (String) parent
+								.getItemAtPosition(position);
+						view.animate().setDuration(2000).alpha(0)
+								.withEndAction(new Runnable() {
+									@Override
+									public void run() {
+										Toast t = Toast.makeText(ActivityMain.this,
+												"Produto:" + item + " removido com sucesso.", Toast.LENGTH_SHORT);
+										t.show();
+										list.remove(item);
+										adapter.notifyDataSetChanged();
+										view.setAlpha(1);
+									}
+								});
+					}
+
+				});
+	}
+	
 	private class StableArrayAdapter extends ArrayAdapter<String> {
 
 		HashMap<String, Integer> mIdMap = new HashMap<String, Integer>();
@@ -486,6 +578,73 @@ public class ActivityMain extends Activity {
 					}
 
 				});
+	}
+	
+	private void popularListViewProdutosComProdutosBusca(ArrayList<String> produtos,
+			final ListView lvProdutos) {
+
+		final ArrayList<String> list = produtos;
+		final StableArrayAdapter adapter = new StableArrayAdapter(this,
+				android.R.layout.simple_list_item_1, list);
+		lvProdutos.setAdapter((ListAdapter) adapter);
+
+		lvProdutos
+				.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+
+					@Override
+					public void onItemClick(AdapterView<?> parent,
+							final View view, int position, long id) {
+						final String item = (String) parent
+								.getItemAtPosition(position);
+						view.animate().setDuration(2000).alpha(0)
+								.withEndAction(new Runnable() {
+									@Override
+									public void run() {
+										list.remove(item);
+										adapter.notifyDataSetChanged();
+										view.setAlpha(1);
+									}
+								});
+						
+						telaBuscarSegunda();
+						
+					}
+
+				});
+	}
+
+	protected void telaBuscarSegunda() {
+
+		setContentView(R.layout.tela_buscarvenda_segunda);
+		
+		final ListView lvProdutos;
+		Button btVoltar, btFinalizar;
+
+		lvProdutos = (ListView) findViewById(R.id.lvProdutos);
+		btVoltar = (Button) findViewById(R.id.btVoltar);
+		btFinalizar = (Button) findViewById(R.id.btFinalizar);
+		
+		popularListViewProdutosComProdutos(this.array, lvProdutos);
+		
+		btFinalizar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View arg0) {
+
+				telaGerenciaDeVendas();
+			}
+
+		});
+		
+		btVoltar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View arg0) {
+
+				telaBuscarVenda();
+			}
+
+		});
+
+		
+		
 	}
 
 	public void telaGerenciaDeClientes() {

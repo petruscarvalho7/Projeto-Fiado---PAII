@@ -20,4 +20,16 @@ public class GerenteVendas implements FacadeFiado {
 		this.vendas = vendas;
 	}
 
+	@Override
+	public void buscar(Object obj) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void remover(Object obj) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
