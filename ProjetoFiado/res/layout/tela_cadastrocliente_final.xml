@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#8B8B83" >
+    android:background="@drawable/background" >
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -127,7 +127,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:gravity="center_horizontal"
          >
         
@@ -135,14 +135,19 @@
             android:id="@+id/btVoltar"
             android:layout_width="100dip"
             android:layout_height="50dip"
-            android:text="@string/btVoltar" />
+            android:text="@string/btVoltar"
+            android:background="@drawable/bg_bt1"
+             />
         
 
         <Button
             android:id="@+id/btFinalizar"
             android:layout_width="100dip"
             android:layout_height="50dip"
-            android:text="@string/btFinalizar"  />
+            android:layout_marginLeft="40dp"
+            android:text="@string/btFinalizar"
+            android:background="@drawable/bg_bt1"
+              />
     </LinearLayout>
 
 </LinearLayout>

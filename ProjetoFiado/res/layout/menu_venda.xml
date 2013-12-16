@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:background="#8B8B83">
+    android:background="@drawable/background">
     
     <QuickContactBadge 
         android:id="@+id/fotoContatoTelaCliente"
@@ -38,6 +38,7 @@
 	        android:layout_height="50dip"
 	        android:layout_marginTop="10dip"
 	        android:text="@string/btNovaVenda"
+	        android:background="@drawable/bg_bt2"
 	         />
 	    
 	     <Button
@@ -45,21 +46,28 @@
 	        android:layout_width="200dip"
 	        android:layout_height="50dip"
 	        android:layout_marginTop="10dip"
-	        android:text="@string/btBuscar" />
+	        android:text="@string/btBuscar"
+	        android:background="@drawable/bg_bt2"
+	         />
 	     
 	      <Button
 	        android:id="@+id/btExcluir"
 	        android:layout_width="200dip"
 	        android:layout_height="50dip"
 	        android:layout_marginTop="10dip"
-	        android:text="@string/btExcluir" />
+	        android:text="@string/btExcluir"
+	        android:background="@drawable/bg_bt2"
+	         />
 	      
 	     <Button
 	          android:id="@+id/btVoltar"
 	          android:layout_width="100dip"
 	          android:layout_height="50dip"
+	          android:layout_marginTop="40dp"
 	          android:gravity="center"
-	          android:text="@string/btVoltar" />
+	          android:text="@string/btVoltar"
+	          android:background="@drawable/bg_bt1"
+	           />
     
     </LinearLayout>
 </LinearLayout>

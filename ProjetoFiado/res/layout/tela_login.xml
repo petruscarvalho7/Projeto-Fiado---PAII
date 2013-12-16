@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-	android:background="#8B8B83"    
+	android:background="@drawable/background"    
      >
 
     <LinearLayout
@@ -52,7 +52,7 @@
         <EditText
             android:id="@+id/ETxtNomeUsuario"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/altura_Edtext"
             android:ems="10"
             android:inputType="text"
             android:background="@android:color/white"
@@ -74,7 +74,7 @@
         <EditText
             android:id="@+id/ETxtSenha"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/altura_Edtext"
             android:ems="10"
             android:inputType="textPassword"
             android:background="@android:color/white"
@@ -93,22 +93,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+         >
 
         <Button
         android:id="@+id/btEsqueceuSenha"
-        android:layout_width="150dip"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/largura_botao_login"
+        android:layout_height="@dimen/altura_botao_login"
         android:text="@string/btEsqueceuSenha" 
         android:textSize="12sp"
+        android:background="@drawable/bg_bt1"
         
         />
         <Button
         android:id="@+id/btLogin"
-        android:layout_width="150dip"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/largura_botao_login"
+        android:layout_height="@dimen/altura_botao_login"
         android:text="@string/btLogin" 
         android:textSize="12sp"
+        android:background="@drawable/bg_bt1"
+        android:layout_marginLeft="55dp"
+        
         
         />
     </LinearLayout>
@@ -117,12 +123,13 @@
 
     <Button
         android:id="@+id/btCadastrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/largura_botao_login"
+        android:layout_height="@dimen/altura_botao_login"
         android:text="@string/btCadastrarNovoUser" 
         android:layout_gravity="center_horizontal"
         android:textSize="12sp"
         android:layout_marginTop="80dp"
+        android:background="@drawable/bg_bt1"
         
         />
 

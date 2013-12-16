@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
      android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    android:background="#8B8B83"
+    android:background="@drawable/background"
     android:orientation="vertical" >
 
     <QuickContactBadge
@@ -56,7 +56,9 @@
                 android:id="@+id/btVoltar"
                 android:layout_width="100dip"
                 android:layout_height="50dip"
-                android:text="@string/btVoltar" />
+                android:text="@string/btVoltar"
+                android:background="@drawable/bg_bt1"
+                 />
 
         </LinearLayout>
     

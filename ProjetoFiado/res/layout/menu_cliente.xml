@@ -2,61 +2,70 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:background="#8B8B83">
-    
-    <QuickContactBadge 
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <QuickContactBadge
         android:id="@+id/fotoContatoTelaCliente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        />
-    <TextView 
+        android:layout_gravity="left" />
+
+    <TextView
         android:id="@+id/nomeUsuario"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
- 		android:text="@string/nomeUsuario"     
-        />
-	<LinearLayout
-	     android:layout_width="match_parent"
-   		 android:layout_height="match_parent"
-   		 android:orientation="vertical" 
-   		 android:gravity="center"
-	     >
+        android:text="@string/nomeUsuario" />
 
-	    <TextView 
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
- 		android:text="@string/menuCliente"
- 		android:gravity="center"  
- 		android:layout_marginBottom="20dip"   
-        />
-	    
-	    <Button
-	        android:id="@+id/btNovoCadastroCliente"
-	        android:layout_width="200dip"
-	        android:layout_height="50dip"
-	        android:layout_marginTop="10dip"
-	        android:text="@string/btNovoCadastroCliente" />
-	    
-	     <Button
-	        android:layout_width="200dip"
-	        android:layout_height="50dip"
-	        android:layout_marginTop="10dip"
-	        android:text="@string/btBuscar" />
-	     
-	      <Button
-	        android:layout_width="200dip"
-	        android:layout_height="50dip"
-	        android:layout_marginTop="10dip"
-	        android:text="@string/btExcluir" />
-	      
-	      <Button
-	          android:id="@+id/btVoltar"
-	          android:layout_width="100dip"
-	          android:layout_height="50dip"
-	          android:gravity="center"
-	          android:text="@string/btVoltar" />
-    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:gravity="center"
+            android:text="@string/menuCliente" />
+
+        <Button
+            android:id="@+id/btNovoCadastroCliente"
+            android:layout_width="@dimen/largura_bt_menus"
+            android:layout_height="@dimen/altura_bt_menus"
+            android:layout_marginTop="10dip"
+            android:text="@string/btNovoCadastroCliente"
+            android:background="@drawable/bg_bt2"
+             />
+
+        <Button
+            android:id="@+id/btBuscar"
+            android:layout_width="@dimen/largura_bt_menus"
+            android:layout_height="@dimen/altura_bt_menus"
+            android:layout_marginTop="10dip"
+            android:text="@string/btBuscar"
+            android:background="@drawable/bg_bt2"
+             />
+
+        <Button
+            android:id="@+id/btExcluir"
+            android:layout_width="@dimen/largura_bt_menus"
+            android:layout_height="@dimen/altura_bt_menus"
+            android:layout_marginTop="10dip"
+            android:text="@string/btExcluir"
+            android:background="@drawable/bg_bt2"
+             />
+
+        <Button
+            android:id="@+id/btVoltar"
+            android:layout_width="@dimen/largura_bt_menus"
+            android:layout_height="@dimen/altura_bt_menus"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/btVoltar"
+            android:background="@drawable/bg_bt1"
+             />
     </LinearLayout>
+
 </LinearLayout>

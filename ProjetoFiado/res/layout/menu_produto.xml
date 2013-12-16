@@ -2,64 +2,68 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:background="#8B8B83">
+    android:background="@drawable/background"
+    android:orientation="vertical"
     
-    <QuickContactBadge 
+     >
+
+    <QuickContactBadge
         android:id="@+id/fotoContatoTelaCliente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        />
-    <TextView 
+        android:layout_gravity="left" />
+
+    <TextView
         android:id="@+id/nomeUsuario"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
- 		android:text="@string/nomeUsuario"     
-        />
-	<LinearLayout
-	     android:layout_width="match_parent"
-   		 android:layout_height="match_parent"
-   		 android:orientation="vertical" 
-   		 android:gravity="center"
-	     >
+        android:text="@string/nomeUsuario" />
 
-	    <TextView 
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
- 		android:text="@string/menuProduto"
- 		android:gravity="center"  
- 		android:layout_marginBottom="20dip"   
-        />
-	    
-	    <Button
-	        android:id="@+id/btAdicionarProduto"
-	        android:layout_width="200dip"
-	        android:layout_height="50dip"
-	        android:layout_marginTop="10dip"
-	        android:text="@string/btNovoCadastroCliente" />
-	    
-	     <Button
-	        android:id="@+id/btBuscarProduto"
-	        android:layout_width="200dip"
-	        android:layout_height="50dip"
-	        android:layout_marginTop="10dip"
-	        android:text="@string/btBuscar" />
-	     
-	      <Button
-	        android:id="@+id/btExcluirProduto"
-	        android:layout_width="200dip"
-	        android:layout_height="50dip"
-	        android:layout_marginTop="10dip"
-	        android:text="@string/btExcluir" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
 
-	      <Button
-	          android:id="@+id/btVoltar"
-	          android:layout_width="100dip"
-	          android:layout_height="50dip"
-	          android:gravity="center"
-	          android:text="@string/btVoltar" />
-    
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:gravity="center"
+            android:text="@string/menuProduto" />
+
+        <Button
+            android:id="@+id/btAdicionarProduto"
+            android:layout_width="@dimen/largura_bt_menus"
+            android:layout_height="@dimen/altura_bt_menus"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/bg_bt2"
+            android:text="@string/btNovoCadastroCliente" />
+
+        <Button
+            android:id="@+id/btBuscarProduto"
+            android:layout_width="@dimen/largura_bt_menus"
+            android:layout_height="@dimen/altura_bt_menus"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/bg_bt2"
+            android:text="@string/btBuscar" />
+
+        <Button
+            android:id="@+id/btExcluirProduto"
+            android:layout_width="@dimen/largura_bt_menus"
+            android:layout_height="@dimen/altura_bt_menus"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/bg_bt2"
+            android:text="@string/btExcluir" />
+
+        <Button
+            android:id="@+id/btVoltar"
+            android:layout_width="@dimen/largura_bt_menus"
+            android:layout_height="@dimen/altura_bt_menus"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_bt1"
+            android:gravity="center"
+            android:text="@string/btVoltar" />
     </LinearLayout>
-    
+
 </LinearLayout>
