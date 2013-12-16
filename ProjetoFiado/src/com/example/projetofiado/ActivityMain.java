@@ -264,7 +264,7 @@ public class ActivityMain extends Activity {
 	// ===--------------------------------------------------------------------------
 	private void telaExcluirVenda() {
 		
-		setContentView(R.layout.tela_excluirvenda);
+		//setContentView(R.layout.tela_excluir);
 		
 		final ListView lvProdutos;
 		Button btFinalizar;
@@ -336,7 +336,7 @@ public class ActivityMain extends Activity {
 				
 				if (produtosAdd.isEmpty()) {
 					Toast t = Toast.makeText(ActivityMain.this,
-							"Você precisa cadastrar algum produto.", Toast.LENGTH_SHORT);
+							"VocÔøΩ precisa cadastrar algum produto.", Toast.LENGTH_SHORT);
 					t.show();
 
 				} else {
@@ -371,7 +371,7 @@ public class ActivityMain extends Activity {
 
 				if (produtosAdd.isEmpty()) {
 					Toast t = Toast.makeText(ActivityMain.this,
-							"Você precisa cadastrar algum produto.", Toast.LENGTH_SHORT);
+							"VocÔøΩ precisa cadastrar algum produto.", Toast.LENGTH_SHORT);
 					t.show();
 
 				} else {
@@ -616,7 +616,7 @@ public class ActivityMain extends Activity {
 
 	protected void telaBuscarSegunda() {
 
-		setContentView(R.layout.tela_buscarvenda_segunda);
+		//setContentView(R.layout.tela_buscarvenda_segunda);
 		
 		final ListView lvProdutos;
 		Button btVoltar, btFinalizar;
