@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <QuickContactBadge
+        android:id="@+id/fotoContatoTelaPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left" />
+    <TextView 
+        android:id="@+id/nomeUsuario"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nomeUsuario"
+      />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <TextView 
+         
+         	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/menuPrincipal"
+        	android:gravity="center"
+        	android:layout_marginBottom="20dip"
+            
+         />
+      
+        <Button
+            android:id="@+id/btGerVendas"
+            android:layout_width="@dimen/largura_bt_menuPrincipal"
+            android:layout_height="@dimen/altura_bt_menuPrincipal"
+            android:background="@drawable/bg_bt2"
+            android:text="@string/btGerenciarVendas"
+             />
+        
+        <Button
+            android:id="@+id/btGerenciarClientes"
+            android:layout_width="@dimen/largura_bt_menuPrincipal"
+            android:layout_height="@dimen/altura_bt_menuPrincipal"
+            android:background="@drawable/bg_bt2"
+            android:layout_marginTop="10dip"
+            android:text="@string/btGerenciarClientes" />
+        
+        <Button
+            android:id="@+id/btGerenciarProdutos"
+            android:layout_width="@dimen/largura_bt_menuPrincipal"
+            android:layout_height="@dimen/altura_bt_menuPrincipal"
+            android:background="@drawable/bg_bt2"
+            android:layout_marginTop="10dip"
+            android:text="@string/btGerenciarProdutos" />
+        
+        <Button
+            android:id="@+id/btPerfil"
+            android:layout_width="@dimen/largura_bt_menuPrincipal"
+            android:layout_height="@dimen/altura_bt_menuPrincipal"
+            android:layout_marginTop="10dip"
+            android:text="@string/perfil"
+            android:background="@drawable/bg_bt2"
+             />
+        
+        <Button
+            android:id="@+id/btSair"
+            android:layout_width="@dimen/largura_bt_menuPrincipal"
+            android:layout_height="@dimen/altura_bt_menuPrincipal"
+            android:background="@drawable/bg_bt1"
+            android:layout_marginTop="30dip"
+            android:text="@string/btSair" />
+    	
+    </LinearLayout>
+</LinearLayout>

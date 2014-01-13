@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,8 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity"
-    android:background="@drawable/background"
+    android:background="#8B8B83"
      >
 
     <LinearLayout
@@ -21,44 +21,37 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/novoCadastro"
-            android:textSize="25sp"
-            android:textColor="@android:color/white"
-             />
+            android:text="@string/editar"
+            android:textSize="25sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/vendedor"
-            android:textSize="17sp"
-            android:textColor="@android:color/white"
-             />
+            android:text="@string/cliente"
+            android:textSize="17sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
          >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/nome"
-            android:textColor="@android:color/white"
-             />
+            android:text="@string/lbNome" />
 
         <EditText
             android:id="@+id/ETxtNome"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:background="@android:color/white"
-             >
+            android:inputType="text" 
+            android:background="@android:drawable/editbox_background">
 
             <requestFocus />
         </EditText>
@@ -73,10 +66,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/cpf"
+            android:text="@string/lbCPF"
             android:layout_marginTop="5dp"
-            android:textColor="@android:color/white"
-            
              />
 
         <EditText
@@ -84,10 +75,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" 
-            android:background="@android:color/white"
-            >
-			
+            android:inputType="text"
+            android:background="@android:drawable/editbox_background" >
+
             <requestFocus />
         </EditText>
 
@@ -95,33 +85,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/cnpj"
-            android:layout_marginTop="5dp"
-            android:textColor="@android:color/white"
-            
+            android:text="@string/lbRG"
+                        
              />
 
         <EditText
-            android:id="@+id/ETxtCnpj"
+            android:id="@+id/ETxtRg"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:background="@android:color/white"
-             >
+            android:inputType="text" 
+            android:background="@android:drawable/editbox_background">
 
             <requestFocus />
         </EditText>
 
         <TextView
-            android:layout_marginTop="5dp"
+            
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/dataNascimento"
-            android:textColor="@android:color/white"
-            
-             />
+            android:text="@string/lbDataNascimento" />
     </LinearLayout>
 
     <LinearLayout
@@ -136,8 +120,7 @@
             android:layout_height="wrap_content"
             android:ems="2"
             android:inputType="number"
-            android:background="@android:color/white"
-             >
+            android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
         </EditText>
@@ -148,9 +131,7 @@
             android:layout_height="wrap_content"
             android:ems="2"
             android:inputType="number"
-            android:layout_marginLeft="5dp"
-            android:background="@android:color/white"
-             >
+            android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
         </EditText>
@@ -161,9 +142,7 @@
             android:layout_height="wrap_content"
             android:ems="4"
             android:inputType="number"
-            android:layout_marginLeft="5dp"
-            android:background="@android:color/white"
-             >
+            android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
         </EditText>
@@ -181,32 +160,43 @@
         android:id="@+id/RBMasculino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/masculino"
-        android:textColor="@android:color/white"
-         />
+        android:text="@string/rbMasculino" />
         
         <RadioButton
         android:id="@+id/RBFeminino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/feminino"
-        android:textColor="@android:color/white"
-         />
-        
-        
+        android:text="@string/rbFeminino" />
         
         
     </RadioGroup>
 
-    
-
-    <Button
-        android:id="@+id/btProximo"
+    <CheckBox
+        android:id="@+id/ckRemover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:text="@string/proximo"
-        android:textSize="12sp" />
+        android:text="@string/ckRemover" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+         >
+        
+        <Button
+            android:id="@+id/BtVoltar"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:text="@string/btVoltar" />
+        
+
+        <Button
+            android:id="@+id/BtProximo"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:text="@string/btProximo"  />
+    </LinearLayout>
 
 </LinearLayout>

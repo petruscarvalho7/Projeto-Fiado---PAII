@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,9 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity"
-    android:background="@drawable/background"
-     >
+    android:background="#8B8B83" >
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -22,20 +21,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/novoCadastro"
-            android:textSize="25sp"
-            android:textColor="@android:color/white"
-            
-             />
+            android:textSize="25sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/cliente"
-            android:textSize="17sp"
-             android:textColor="@android:color/white"
-            
-             />
+            android:textSize="17sp" />
     </LinearLayout>
 
     
@@ -50,17 +43,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ddd"
-             android:textColor="@android:color/white"
-             />
+            android:text="@string/lbDDD" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:text="@string/telefone"
-            android:textColor="@android:color/white"
-             />
+            android:text="@string/lbTelefone" />
     </LinearLayout>
 
     <LinearLayout
@@ -74,8 +63,7 @@
             android:layout_height="wrap_content"
             android:ems="4"
             android:inputType="number"
-            android:background="@android:color/white"
-             >
+            android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
         </EditText>
@@ -85,9 +73,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number"
-            android:background="@android:color/white"
-             >
+            android:inputType="number" 
+            android:background="@android:drawable/editbox_background">
 
             <requestFocus />
         </EditText>
@@ -102,9 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/email"
-             android:textColor="@android:color/white"
-             />
+            android:text="@string/lbEmail" />
 
         <EditText
             android:id="@+id/ETxtEmail"
@@ -112,8 +97,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:background="@android:color/white"
-             >
+            android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
         </EditText>
@@ -122,9 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="@string/referencia"
-            android:textColor="@android:color/white"
-             />
+            android:text="@string/lbReferencia" />
 
         <EditText
             android:id="@+id/ETxtReferecia"
@@ -133,8 +115,7 @@
             android:ems="10"
             android:maxLines="4"
             android:inputType="textMultiLine"
-            android:background="@android:color/white"
-             >
+            android:background="@android:drawable/editbox_background" >
 
             <requestFocus />
         </EditText>
@@ -143,17 +124,27 @@
         
     </LinearLayout>
 
-    <Button
-        android:id="@+id/BtProximo"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:textSize="12sp"
-        android:text="@string/finalizar"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+         >
         
+        <Button
+            android:id="@+id/BtVoltar"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:text="@string/btVoltar" />
         
-         />
+
+        <Button
+            android:id="@+id/BtFinalizar"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:text="@string/btFinalizar"  />
+    </LinearLayout>
+    
 
 </LinearLayout>

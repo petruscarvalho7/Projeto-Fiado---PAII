@@ -3,5 +3,18 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    
+    
+    <dimen name="largura_botao_login">120dip</dimen>
+    <dimen name="altura_botao_login">40dip</dimen>
+    
+    <dimen name="largura_bt_menuPrincipal">200dip</dimen>
+    <dimen name="altura_bt_menuPrincipal">50dip</dimen>
+    
+    <dimen name="largura_bt_menus">200dip</dimen>
+    <dimen name="altura_bt_menus">50dip</dimen>
+    
+    <dimen name="altura_Edtext">30dip</dimen>
 
 </resources>
