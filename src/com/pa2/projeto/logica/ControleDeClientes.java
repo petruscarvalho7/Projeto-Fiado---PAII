@@ -43,7 +43,7 @@ public class ControleDeClientes {
 		Cliente cliente = buscaCliente(cpf);
 
 		if (cliente == null) {
-			throw new ClienteInexistenteException("Cliente já inexistente");
+			throw new ClienteInexistenteException("O cliente informado não existe!");
 		}
 		clientes.remove(cliente);
 		return cliente;

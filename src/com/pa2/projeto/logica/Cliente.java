@@ -4,8 +4,14 @@ import java.util.Date;
 
 public class Cliente extends Pessoa{
 	
+	/*
+	 * A classe cliente herda de pessoa informações basicas de
+	 * cadastro pessoal
+	 */
+	
 	Date dataDeCobranca;
 	Conta conta;
+	
 	
 	
 	public Cliente(String nome, String cpf, String rg, Endereco endereco,
