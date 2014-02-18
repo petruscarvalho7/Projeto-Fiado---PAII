@@ -14,7 +14,8 @@ public class GerenteVendas implements FacadeFiadoVendas {
 	}
 	
 	@Override
-	public void addVenda(Cliente cliente, Venda venda) {
+	public void addVenda(Cliente cliente, String nome, ArrayList<Produto> produtosVenda) {
+		Venda venda = criarVenda(nome,produtosVenda);
 		this.vendas.put(cliente, venda);
 	}
 
@@ -65,10 +66,9 @@ public class GerenteVendas implements FacadeFiadoVendas {
 		
 	}
 
-	@Override
-	public void criarVenda(String nome, ArrayList<Produto> produtosVenda) {
-		// TODO Auto-generated method stub
-		
+	private Venda criarVenda(String nome, ArrayList<Produto> produtosVenda) {
+		Venda venda = new Venda(nome,produtosVenda);
+		return venda;
 	}
 
 }
