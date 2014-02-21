@@ -1,5 +1,7 @@
 package br.javamagazine.cadastro;
 
+import org.json.JSONException;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -44,7 +46,12 @@ public class BuscarCarro extends Activity implements OnClickListener {
     String nomeCarro = nome.getText().toString();
 
     // Busca o carro pelo nome
-    Carro carro = buscarCarro(nomeCarro);
+    Carro carro = null;
+	try {
+		carro = buscarCarro(nomeCarro);
+	} catch (JSONException e) {
+	
+	}
 
     if (carro != null) {
       // Atualiza os campos com o resultado
@@ -65,7 +72,7 @@ public class BuscarCarro extends Activity implements OnClickListener {
   }
 
   // Busca um carro pelo nome
-  protected Carro buscarCarro(String nomeCarro) {
+  protected Carro buscarCarro(String nomeCarro) throws JSONException {
     Carro carro = repositorioCarro.buscarCarroPorNome(nomeCarro);
     return carro;
   }

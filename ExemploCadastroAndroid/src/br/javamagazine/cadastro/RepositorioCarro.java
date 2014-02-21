@@ -36,7 +36,7 @@ public interface RepositorioCarro {
   public List<Carro> listarCarros();
 
   // Busca o carro pelo nome
-  public Carro buscarCarroPorNome(String nome);
+  public Carro buscarCarroPorNome(String nome) throws JSONException;
   
   public String retorno();
 }

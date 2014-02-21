@@ -52,10 +52,13 @@ public class RepositorioCarroFake implements RepositorioCarro {
   }
 
   @Override
-  public Carro buscarCarroPorNome(String nome) {
+  public Carro buscarCarroPorNome(String nome) throws JSONException {
     List<Carro> carros = listarCarros();
     for (Carro carro : carros) {
-      if (carro.getNome().equals(nome)) { return carro; }
+      if (carro.getNome().equals(nome)) { 
+    	  
+    	  carroJson.put(carro.getNome(), carro);
+    	  return carro; }
     }
     return null;
   }
@@ -78,7 +81,7 @@ public class RepositorioCarroFake implements RepositorioCarro {
     if (carro.getId() == null) {
       // Se é um novo carro, incrementa um novo id
       carro.setId(++nextId);
-      carroJson.put("Carro", carro);
+      carroJson.put(carro.getNome(), carro);
     }
     // Atualiza o carro, ou insere um novo com o próximo id
     map.put(carro.getId(), carro);
