@@ -11,6 +11,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.json.JSONException;
+
 import android.util.Log;
 
 /**
@@ -28,12 +30,13 @@ public class RepositorioCarroHttp implements RepositorioCarro {
   private static final String CATEGORIA = "javamagazine";
   // Depois de buscar os carros, armazena a lista em memória
   private List<Carro> carros;
-
+  private RepositorioCarro repositorio = new RepositorioCarroFake();
   @Override
   // Lista da web, e armazena a lista de carros em memória
   public List<Carro> listarCarros() {
     Log.i(CATEGORIA, "listarCarros: " + URL_LISTAR);
     HttpURLConnection conn = null;
+    this.carros = repositorio.listarCarros();
     try {
       // Cria a URL
       URL u = new URL(URL_LISTAR);
@@ -47,7 +50,7 @@ public class RepositorioCarroHttp implements RepositorioCarro {
       int resposta = conn.getResponseCode();
       Log.i(CATEGORIA, "Resposta: " + resposta);
 
-      this.carros = new ArrayList<Carro>();
+      this.carros = repositorio.listarCarros();
 
       InputStream in = conn.getInputStream();
       DataInputStream dataIn = new DataInputStream(in);
@@ -73,13 +76,14 @@ public class RepositorioCarroHttp implements RepositorioCarro {
         conn.disconnect();
       }
     }
-    return null;
+    return carros;
   }
 
   @Override
   // Salva o carro fazendo uma requisição web, enviando os dados por POST
-  public boolean salvar(Carro carro) {
+  public boolean salvar(Carro carro) throws JSONException {
     Log.i(CATEGORIA, "salvar: " + URL_SALVAR);
+    repositorio.salvar(carro);
     try {
       // Cria a URL
       URL u = new URL(URL_SALVAR);
