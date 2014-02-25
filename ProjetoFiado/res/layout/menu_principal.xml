@@ -57,15 +57,6 @@
             android:text="@string/btGerenciarProdutos" />
         
         <Button
-            android:id="@+id/btPerfil"
-            android:layout_width="@dimen/largura_bt_menuPrincipal"
-            android:layout_height="@dimen/altura_bt_menuPrincipal"
-            android:layout_marginTop="10dip"
-            android:text="@string/perfil"
-            android:background="@drawable/bg_bt2"
-             />
-        
-        <Button
             android:id="@+id/btSair"
             android:layout_width="@dimen/largura_bt_menuPrincipal"
             android:layout_height="@dimen/altura_bt_menuPrincipal"

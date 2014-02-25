@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Color;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -763,19 +762,11 @@ public class ActivityMain extends Activity {
 		setContentView(R.layout.menu_principal);
 
 		Button btGerVendas, btGerClientes, btGerProdutos, btSair;
-		final Button btPerfil;
 
 		btGerVendas = (Button) findViewById(R.id.btGerVendas);
 		btGerClientes = (Button) findViewById(R.id.btGerenciarClientes);
 		btGerProdutos = (Button) findViewById(R.id.btGerenciarProdutos);
 		btSair = (Button) findViewById(R.id.btSair);
-		btPerfil = (Button) findViewById(R.id.btPerfil);
-		
-		if(!perfil){
-			btPerfil.setBackgroundColor(Color.YELLOW);
-		}else{
-			btPerfil.setBackgroundColor(Color.GREEN);
-		}
 		
 		btGerVendas.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
@@ -799,14 +790,6 @@ public class ActivityMain extends Activity {
 		});
 		
 
-		btPerfil.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View arg0) {
-
-				telaPerfil();
-				
-			}
-		});
-		
 		btSair.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
 

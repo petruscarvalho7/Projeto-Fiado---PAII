@@ -48,7 +48,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@android:drawable/editbox_background"
-            android:inputType="text" />
+            android:inputType="textPassword" />
 
         <TextView
             android:id="@+id/lbRepitaSenha"
@@ -62,7 +62,22 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@android:drawable/editbox_background"
-            android:inputType="text" />
+            android:inputType="textPassword" />
+        
+        <TextView
+            android:id="@+id/lbCPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/lbCPF" />
+
+        <EditText
+            android:id="@+id/campoCPF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="number" />
+        
 
                 
     </LinearLayout>
