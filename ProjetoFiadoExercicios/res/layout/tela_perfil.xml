@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#8B8B83"
+    android:orientation="vertical" >
+
+    <TextView
+            android:id="@+id/lbCPF"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:text="@string/lbCPF" />
+
+    <EditText
+            android:id="@+id/campoCPF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btVoltar"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:text="@string/btVoltar" />
+
+        <Button
+            android:id="@+id/btSalvar"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:text="@string/btSalvar" />
+    </LinearLayout>
+
+</LinearLayout>

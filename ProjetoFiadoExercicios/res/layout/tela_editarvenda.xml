@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#8B8B83"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/nomeCliente"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nomeCliente" />
+    
+    <Button
+        android:id="@+id/btSelecionarCliente"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:text="@string/btSelecionarCliente" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lvProdutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/observacao"
+            android:layout_marginBottom="60dip"
+            android:background="@drawable/bg_key"
+            android:fadeScrollbars="true"
+            android:scrollbars="vertical" >
+
+        </ListView>
+        
+        <TextView
+        	android:id="@+id/observacao"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/observacao" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+        	
+        
+            <Button
+                android:id="@+id/btVoltar"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:text="@string/btVoltar" />
+
+            <Button
+                android:id="@+id/btProximo"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:text="@string/btFinalizar" />
+        </LinearLayout>
+
+    
+
+</LinearLayout>

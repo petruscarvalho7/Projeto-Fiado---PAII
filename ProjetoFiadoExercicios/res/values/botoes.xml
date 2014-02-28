@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="btGerenciarVendas">Gerenciar Vendas</string>
+    <string name="lbCadastroUsuario">Cadastrar Usuário</string>
+    <string name="btCadastrar">Cadastrar</string>
+    <string name="btSelecionarCliente">Selecionar Cliente</string>
+    <string name="btGerenciarClientes">Gerenciar Clientes</string>
+    <string name="btGerenciarProdutos">Gerenciar Produtos</string>
+    <string name="btSair">Sair</string>
+    <string name="lbCadastroProduto">Cadastro de Produto</string>
+    <string name="lbCadastroCliente">Cadastro de Cliente</string>
+    <string name="btNovoCadastroCliente">Novo Cadastro</string>
+	<string name="btBuscar">Buscar</string>
+	<string name="btExcluir">Excluir</string>
+	<string name="lbNome">Nome:</string>
+	<string name="lbCodigo">Código:</string>
+	<string name="lbTipo">Tipo:</string>
+	<string name="lbPreco">Preço:</string>
+	<string name="btSalvar">Salvar</string>
+	<string name="btProximo">Próximo</string>
+	<string name="lbCPF">CPF:</string>
+	<string name="lbRG">RG:</string>
+	<string name="rbMasculino">Masculino </string>
+	<string name="rbFeminino">Feminino </string>
+    <string name="lbDataNascimento">Data de nascimento:</string>
+    <string name="lbEndereco">Endereço:</string>
+    <string name="lbNumero">Número:</string>
+    <string name="lbCidade">Cidade:</string>
+    <string name="lbBairro">Bairro:</string>
+    <string name="lbPais">País:</string>
+    <string name="lbCep">CEP:</string>
+    <string name="lbDDD">DDD:</string>
+    <string name="lbTelefone">Telefone:</string>
+    <string name="lbEmail">Email:</string>
+    <string name="lbReferencia">Referência:</string>
+    <string name="lbCnpj">CNPJ:</string>
+    <string name="lbSenha">Senha:</string>
+    <string name="lbRepitaSenha">Repita a senha:</string>
+    <string name="lbLembrarSenha">Lembrete da senha:</string>
+    <string name="btEsqueceuSenha">Esqueceu a senha ?</string>
+    <string name="btLogin">Login</string>
+    <string name="btCadastrarNovoUser">Cadastre-se</string>
+    <string name="btNovaVenda">Nova Venda</string>
+    <string name="btAdd">Adicionar</string>
+    <string name="btDelete">Remover</string>
+    <string name="btFinalizar">Finalizar</string>
+    <string name="lbQtd">Quantidade:</string>
+    <string name="lbLogin">Login:</string>
+	
+</resources>

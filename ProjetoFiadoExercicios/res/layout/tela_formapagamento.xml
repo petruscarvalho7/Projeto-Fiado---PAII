@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    
+	<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:text="@string/formaDePagamento"
+            android:textSize="25sp" />
+    
+	 <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+	     <Spinner
+	         android:id="@+id/spParcelas"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentLeft="true"
+	         android:layout_below="@+id/spPagamento"
+	         android:layout_marginTop="36dp"
+	         android:entries="@array/arrayNumeroParcelas"
+	         android:prompt="@string/numeroParcelas" 
+	         android:background="@android:color/white"
+	         />
+
+	       <Button
+	           android:id="@+id/btSelecionarCliente"
+	           android:layout_width="100dip"
+	           android:layout_height="50dip"
+	           android:layout_alignParentLeft="true"
+	           android:layout_alignParentRight="true"
+	           android:layout_alignParentTop="true"
+	           android:text="@string/btSelecionarCliente"
+	           android:background="@drawable/bg_bt2"
+	            />
+
+	       <Spinner
+	           android:id="@+id/spPagamento"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_alignParentLeft="true"
+	           android:layout_below="@+id/btSelecionarCliente"
+	           android:entries="@array/arrayPagamento"
+	           android:prompt="@string/nomeEntradaPagamento" 
+	           android:background="@android:color/white"
+	           />
+	           
+     </RelativeLayout>
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        
+         >
+        
+        <Button
+            android:id="@+id/btVoltar"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:text="@string/btVoltar"
+            android:background="@drawable/bg_bt1"
+             />
+        
+
+        <Button
+            android:id="@+id/btFinalizar"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="30dp"
+            android:text="@string/btFinalizar"
+            android:background="@drawable/bg_bt1"
+              />
+    </LinearLayout>
+     
+</LinearLayout>

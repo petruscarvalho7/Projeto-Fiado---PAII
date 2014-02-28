@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ProjetoFiado</string>
+    <string name="action_settings">Settings</string>
+    <string name="nomeUsuario">Default User</string>
+    <string name="menuPrincipal">Menu Principal</string>
+    <string name="infoCadastral">Informações Cadastrais</string>
+    <string name="menuCliente">Menu Cliente</string>
+    <string name="menuProduto">Menu Produto</string>
+    <string name="menuVenda">Menu Venda</string>
+    <string name="novoCadastro">Novo Cadastro</string>
+    <string name="cliente">Cliente</string>
+    <string name="vendedor">Vendedor</string>
+    <string name="logo">Logo Marca</string>
+    <string name="nomeEntradaPagamento">Pagamento</string>
+    <string name="formaDePagamento">Forma de Pagamento</string>
+    <string name="selecionarProduto">Selecionar Produto</string>
+    <string name="editarProduto">Editar Produto</string>
+    <string name="ckRemover">Remover</string>
+    <string name="selecionarCliente">Selecionar Cliente</string>
+    <string name="userLogin">Usuário:</string>
+    <string name="btVoltar">Voltar</string>
+    <string name="editar">Editar</string>
+    <string name="perfil">Perfil</string>
+    <string name="nomeCliente">Sem cliente selecionado.</string>
+    <string name="observacao">Obs.: Para exclusão de Produtos, clique sobre o mesmo.</string>
+    <string name="observacaoEditar">Obs.: Para edição de Venda, clique sobre o mesmo.</string>
+    
+    
+    <string-array name="arrayPagamento">
+        <item>Dinheiro</item>
+        <item>Cartão</item>
+    </string-array>
+    
+    <string name="numeroParcelas">N Parcelas</string>
+    
+    <string-array name="arrayNumeroParcelas">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    
+    
+    
+    
+
+</resources>

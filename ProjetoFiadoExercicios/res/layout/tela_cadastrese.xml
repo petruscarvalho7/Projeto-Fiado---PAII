@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/lbCadastroUsuario"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lbNome"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:text="@string/userLogin" />
+
+        <EditText
+            android:id="@+id/campoNome"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/lbSenha"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/lbSenha" />
+
+        <EditText
+            android:id="@+id/campoSenha"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/lbRepitaSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/lbRepitaSenha" />
+
+        <EditText
+            android:id="@+id/campoReSenha"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="text" />
+
+                
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+         >
+        
+        <Button
+            android:id="@+id/btVoltar"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:text="@string/btVoltar"
+            android:background="@drawable/bg_bt1"
+             />
+        
+
+        <Button
+            android:id="@+id/btSalvar"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="40dp"
+            android:text="@string/btSalvar"
+            android:background="@drawable/bg_bt1"
+             />
+    </LinearLayout>
+
+</LinearLayout>
+

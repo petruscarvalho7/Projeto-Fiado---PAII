@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#8B8B83"
+    android:orientation="vertical" >
+
+    <TextView
+            android:id="@+id/lbNome"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:text="@string/lbNome" />
+
+    <EditText
+            android:id="@+id/campoNome"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="text" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btAdd"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/btAdd"
+            android:src="@android:drawable/ic_menu_add" />
+
+        <ImageButton
+            android:id="@+id/btDelete"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btAdd"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/btDelete"
+            android:src="@android:drawable/ic_delete" />
+
+        <ListView
+            android:id="@+id/lvProdutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btAdd"
+            android:layout_marginBottom="60dip"
+            android:background="@drawable/bg_key"
+            android:fadeScrollbars="true"
+            android:scrollbars="vertical" >
+        </ListView>
+
+        
+    </RelativeLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btVoltar"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:text="@string/btVoltar" />
+
+            <Button
+                android:id="@+id/btProximo"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:text="@string/btProximo" />
+        </LinearLayout>
+
+</LinearLayout>
