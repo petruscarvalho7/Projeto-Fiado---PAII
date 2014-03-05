@@ -4,6 +4,10 @@ public class Endereco {
 
 	private String nomeRua, bairro;
 
+	public Endereco(String string) {
+		this.nomeRua = string;
+	}
+
 	public String getNomeRua() {
 		return nomeRua;
 	}

@@ -18,9 +18,11 @@ public class Cliente {
 	private Endereco endereco;
 	
 	
-	public Cliente(String nome, String cpf, String sexo, String telefone, String email, String referencia,
+	public Cliente(long id,String nome,String rg, String cpf, String sexo, String telefone, String email, String referencia,
 			Date nascimento, Endereco endereco){
+		this.id = id;
 		this.nome = nome;
+		this.rg = rg;
 		this.cpf = cpf;
 		this.sexo = sexo;
 		this.telefone = telefone;
@@ -30,6 +32,9 @@ public class Cliente {
 		this.endereco = endereco;
 	}
 	
+	public Cliente() {
+	}
+
 	public String getNome() {
 		return nome;
 	}
@@ -108,6 +113,7 @@ public class Cliente {
 		//Campos
 		public static final String NOME = "nome"; 
 		public static final String CPF = "cpf";
+		public static final String RG = "rg";
 		public static final String ENDERECO = "endereco";
 
 		public static final String NASCIMENTO = "nascimento";
